@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('products', function (Blueprint $table) {
+        Schema::create('product_images', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('slug')->unique();
-            $table->text('description');
-            $table->text('sort_description')->nullable();
+            $table->unsignedBigInteger('product_id');
             $table->string('image')->nullable();
             $table->timestamps();
             $table->softDeletes(); // Soft Delete 
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('product_images');
     }
 };
