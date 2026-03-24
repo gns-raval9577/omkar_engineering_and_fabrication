@@ -13,6 +13,8 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class ProductResource extends Resource
 {
@@ -20,7 +22,7 @@ class ProductResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $recordTitleAttribute = 'product';
+protected static ?string $recordTitleAttribute = 'Products';
 
     public static function form(Schema $schema): Schema
     {
@@ -36,6 +38,13 @@ class ProductResource extends Resource
     {
         return [
             //
+        ];
+    }
+
+    public static function getRelationManagers(): array
+    {
+        return [
+            // RelationManagers\ImagesRelationManager::class,
         ];
     }
 
