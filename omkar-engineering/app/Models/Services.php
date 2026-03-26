@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Product extends Model
+class Services extends Model
 {
     use HasFactory;
     use SoftDeletes;
@@ -17,9 +17,4 @@ class Product extends Model
         'sort_description',
         'image',
     ];
-
-    public function images()
-    {
-        return $this->hasMany(ProductImages::class);
-    }
 }

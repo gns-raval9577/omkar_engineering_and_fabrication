@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Admin\Resources\Products\Tables;
+namespace App\Filament\Admin\Resources\Services\Tables;
 
-use App\Models\Product;
+use App\Models\Services;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\DeleteAction;
@@ -18,7 +18,7 @@ use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\ToggleColumn;
 use Filament\Tables\Table;
 
-class ProductsTable
+class servicesTable
 {
     public static function configure(Table $table): Table
     {

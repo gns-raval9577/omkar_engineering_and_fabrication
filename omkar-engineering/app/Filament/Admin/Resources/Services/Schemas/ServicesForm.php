@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Filament\Admin\Resources\Products\Schemas;
+namespace App\Filament\Admin\Resources\Services\Schemas;
 
 use Filament\Schemas\Schema;
-use App\Models\Product;
+use App\Models\Services;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\FileUpload;
 use Filament\Schemas\Components\Utilities\Set;
 use Illuminate\Support\Str;
 
-class ProductForm
+class ServicesForm
 {
     public static function configure(Schema $schema): Schema
     {
@@ -27,7 +27,7 @@ class ProductForm
                     ->dehydrated()
                     ->required()
                     ->maxLength(255)
-                    ->unique(Product::class, 'slug', ignoreRecord: true),
+                    ->unique(Services::class, 'slug', ignoreRecord: true),
 
                 TextInput::make('description')
                     ->required()
@@ -38,9 +38,9 @@ class ProductForm
                     ->maxLength(255),
 
                 FileUpload::make('image')
-                    ->label('Product Image')
+                    ->label('Service Image')
                     ->image() // only image
-                    ->directory('product-image') // storage/app/public/product-icons
+                    ->directory('services-image') // storage/app/public/services-icons
                     ->imagePreviewHeight('100')
                     ->maxSize(1024), // 1MB
 
