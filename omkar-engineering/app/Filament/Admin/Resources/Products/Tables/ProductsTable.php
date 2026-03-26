@@ -24,11 +24,17 @@ class ProductsTable
     {
         return $table
             ->columns([
-                TextColumn::make('name')
+                TextColumn::make('title')
                     ->searchable()
                     ->sortable()
                     ->weight(FontWeight::Medium),
+                TextColumn::make('slug')
+                    ->searchable()
+                    ->sortable(),
                 TextColumn::make('description')
+                    ->searchable()
+                    ->sortable(),
+                TextColumn::make('sort_description')
                     ->searchable()
                     ->sortable(),
                 ImageColumn::make('image')
@@ -50,3 +56,4 @@ class ProductsTable
             ]);
     }
 }
+
