@@ -8,40 +8,40 @@
     <header class="header slider-fade">
         <div class="owl-carousel owl-theme">
             <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-            <div class="text-left item bg-img" data-overlay-dark="4" data-background="{{ asset('template/img/slider/1.jpg') }}">
+            <div class="text-left item bg-img" data-overlay-dark="4" data-background="{{ asset('template/img/slider/c1.jpg') }}">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-7">
-                                <h4>Guaranteed High Quality</h4>
-                                <h1>Welcome to Norc. Construction</h1>
-                                <p>Our 25 years working experience make a different construction building. Viverra tristique usto duis vitae diam neque nivamus estan the atin viverra nectow drana setlie.</p> <a href="projects.html" class="button-primary">Our Projects</a> <a href="services.html" class="button-tersiyer">Our Services</a>
+                                <h4>Trusted Fabrication Experts</h4>
+                                <h1>Omkar Engineering & Fabrication</h1>
+                                <p>We provide high-quality engineering and fabrication services including metal fabrication, industrial structures, and custom machinery solutions with precision and durability.</p> <a href="projects.html" class="button-primary">Our Projects</a> <a href="services.html" class="button-tersiyer">Our Services</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-left item bg-img" data-overlay-dark="4" data-background="{{ asset('template/img/slider/2.jpg')}}">
+            <div class="text-left item bg-img" data-overlay-dark="4" data-background="{{ asset('template/img/slider/c2.jpg')}}">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-7">
-                                <h4>Architecture Design</h4>
-                                <h1>We Build Great Projects</h1>
-                                <p>Our 25 years working experience make a different construction building. Viverra tristique usto duis vitae diam neque nivamus estan the atin viverra nectow drana setlie.</p> <a href="projects.html" class="button-primary">Our Projects</a> <a href="services.html" class="button-tersiyer">Our Services</a>
+                                <h4>Industrial & Custom Solutions</h4>
+                                <h1>Precision Engineering Services</h1>
+                                <p>Specializing in structural fabrication, welding works, shed fabrication, and industrial project execution tailored to client requirements.</p> <a href="projects.html" class="button-primary">Our Projects</a> <a href="services.html" class="button-tersiyer">Our Services</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-left item bg-img" data-overlay-dark="4" data-background="{{ asset('template/img/slider/3.jpg')}}">
+            <div class="text-left item bg-img" data-overlay-dark="4" data-background="{{ asset('template/img/slider/c3.jpg')}}">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-7">
-                                <h4>Professional Team</h4>
-                                <h1>Build Your Dream House</h1>
-                                <p>Our 25 years working experience make a different construction building. Viverra tristique usto duis vitae diam neque nivamus estan the atin viverra nectow drana setlie.</p> <a href="projects.html" class="button-primary">Our Projects</a> <a href="services.html" class="button-tersiyer">Our Services</a>
+                                <h4>25+ Years Experience</h4>
+                                <h1>Your Trusted Fabrication Partner</h1>
+                                <p>Omkar Engineering delivers reliable fabrication services with expert craftsmanship, modern tools, and commitment to quality and safety.</p> <a href="projects.html" class="button-primary">Our Projects</a> <a href="services.html" class="button-tersiyer">Our Services</a>
                             </div>
                         </div>
                     </div>
@@ -54,34 +54,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-30">
-                    <div class="section-subtitle">Construction Firm</div>
-                    <div class="section-title">About <span>norc</span></div>
-                    <p>Our company at libero tristique mattis. Suspendisse potenti sed leonra main dignissim justo porta eget. Curabitur luctus magna numsaton vivention esellentesue the miss tenis vitae mollie.</p>
-                    <p>Curabitur luctus magna numsaton vivention esellentesue the mis awa vitan sedeonra magnain dignissim porta.</p>
+                    <div class="section-subtitle">Engineering & Fabrication Company</div>
+                    <div class="section-title">About <span>Omkar</span></div>
+                    <p>Omkar Engineering & Fabrication is a trusted name in delivering high-quality engineering and fabrication services. We specialize in metal fabrication, structural works, industrial sheds, and custom engineering solutions tailored to client requirements.</p>
+                    <p>With a strong focus on precision, durability, and modern techniques, we ensure every project meets the highest quality standards. Our skilled team is committed to providing reliable and cost-effective solutions for industrial and commercial projects.</p>
                     <ul class="listext list-unstyled mb-30">
                         <li>
                             <div class="listext-icon"> <i class="norc-d-check"></i> </div>
                             <div class="listext-text">
-                                <p>Over 25 years of experience</p>
+                                <p>Over 25 years of engineering and fabrication experience</p>
                             </div>
                         </li>
                         <li>
                             <div class="listext-icon"> <i class="norc-d-check"></i> </div>
                             <div class="listext-text">
-                                <p>100+ successfully executed projects</p>
+                                <p>100+ successfully completed industrial projects</p>
                             </div>
                         </li>
                         <li>
                             <div class="listext-icon"> <i class="norc-d-check"></i> </div>
                             <div class="listext-text">
-                                <p>Exceptional work quality</p>
+                                <p>High-quality workmanship and reliable service</p>
                             </div>
                         </li>
                     </ul>
                     <div class="line-dec"></div>
                     <div class="about-bottom"> <img src="{{ asset('template/img/signature-dark.svg') }}" alt="" class="image about-signature">
                         <div class="about-name-wrapper">
-                            <div class="about-name">Adam Norman</div>
+                            <div class="about-name">Sagar Rathod</div>
                             <div class="about-rol">CEO & Founder</div>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                 <div class="col-md-6">
                     <div class="about-img"> <img src="{{ asset('template/img/about.jpg')}}" alt="">
                         <div class="about-img-hotifer">
-                            <p>Our 25 years working experience make a different construction building.</p>
+                            <p>Delivering durable and precision-based fabrication solutions with over 25 years of industry experience.</p>
                         </div>
                     </div>
                 </div>
