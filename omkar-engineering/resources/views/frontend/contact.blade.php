@@ -57,7 +57,24 @@
                     <div class="form-wrap">
                         <div class="form-box">
                             <h5>Get in touch</h5>
-                            <form method="post" class="contact__form">
+                            <form method="POST" action="{{ route('contact.send') }}" class="contact__form">
+                                @csrf
+
+                                @if (session('success'))
+                                    <div class="alert alert-success">
+                                        {{ session('success') }}
+                                    </div>
+                                @endif
+
+                                @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                                 <!-- Form message -->
                                 <div class="row">
                                     <div class="col-12">
@@ -83,8 +100,9 @@
                                         <textarea name="message" id="message" cols="30" rows="4" placeholder="Message *" required></textarea>
                                     </div>
                                     <div class="col-md-12">
-                                        <button class="button-secondary mt-15"><a href="#0"><span>Send
-                                                    Message</span></a></button>
+                                        <button type="submit" class="button-secondary mt-15">
+                                            <span>Send Message</span>
+                                        </button>
                                     </div>
                                 </div>
                             </form>
