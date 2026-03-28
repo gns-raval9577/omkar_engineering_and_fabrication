@@ -45,31 +45,43 @@
             <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Home <i class="fa fa-angle-down"></i></a>
+                    {{-- <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Home <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="index-2.html" class="dropdown-item active"><span>Home Layout 01</span></a></li>
                             <li><a href="index2.html" class="dropdown-item"><span>Home Layout 02</span></a></li>
                             <li><a href="index3.html" class="dropdown-item"><span>Home Layout 03</span></a></li>
                             <li><a href="index4.html" class="dropdown-item"><span>Home Layout 04</span></a></li>
                         </ul>
-                    </li>
+                    </li> --}}
+                    <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Services <i class="fa fa-angle-down"></i></a>
+                    <li class="nav-item"><a class="nav-link" href="services2.html">Product</a></li>
+                    {{-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Services <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="services.html" class="dropdown-item"><span>Services 01</span></a></li>
                             <li><a href="services2.html" class="dropdown-item"><span>Services 02</span></a></li>
                             <li><a href="services3.html" class="dropdown-item"><span>Services 03</span></a></li>
                             <li><a href="services-page.html" class="dropdown-item"><span>Services Page</span></a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Projects <i class="fa fa-angle-down"></i></a>
+                    </li> --}}
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    {{-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Projects <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="projects.html" class="dropdown-item"><span>Projects 01</span></a></li>
                             <li><a href="projects2.html" class="dropdown-item"><span>Projects 02</span></a></li>
                             <li><a href="project-page.html" class="dropdown-item"><span>Projects Page</span></a></li>
                         </ul>
+                    </li> --}}
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Resources <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="image-gallery.html" class="dropdown-item"><span>Gallery</span></a></li>
+                            <li><a href="faqs.html" class="dropdown-item"><span>Certificate</span></a></li>
+                            <li><a href="team.html" class="dropdown-item"><span>Blog</span></a></li>
+                            <li><a href="testimonials.html" class="dropdown-item"><span>Testimonial</span></a></li>
+                            <li><a href="faqs.html" class="dropdown-item"><span>Faqs</span></a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Pages <i class="fa fa-angle-down"></i></a>
+                    {{-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Pages <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="image-gallery.html" class="dropdown-item"><span>Image Gallery</span></a></li>
                             <li><a href="video-gallery.html" class="dropdown-item"><span>Video Gallery</span></a></li>
@@ -84,15 +96,21 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Blog <i class="fa fa-angle-down"></i></a>
+                    </li> --}}
+                    {{-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Blog <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="blog.html" class="dropdown-item"><span>Blog 01</span></a></li>
                             <li><a href="blog2.html" class="dropdown-item"><span>Blog 02</span></a></li>
                             <li><a href="post.html" class="dropdown-item"><span>Post Page</span></a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Downloads <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html" class="dropdown-item"><span>Company Brochure</span></a></li>
+                            <li><a href="blog2.html" class="dropdown-item"><span>E-Card / Visiting Card</span></a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
