@@ -1,176 +1,148 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'About')
+@section('title', 'product')
 
 @section('content')
 
     <!-- Header Banner -->
-    <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
     <section class="banner-header banner-img-top section-padding valign bg-img bg-fixed" data-overlay-dark="4"
         data-background="{{ asset('template/img/slider/1.jpg') }}">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <h6>Engineering & Fabrication Company</h6>
-                    <h1>About <span>Omkar</span></h1>
+                    <h6>What We Do</h6>
+                    <h1>Our <span>Services</span></h1>
                 </div>
             </div>
         </div>
     </section>
-    <!-- About -->
-    <section class="about section-padding">
+    <!-- Services 2 -->
+    <section class="services2 center section-padding bg-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-30">
-                    <h5>Leading Experts in Engineering & Fabrication Solutions!</h5>
-                    <p>Omkar Engineering & Fabrication is a trusted name in delivering high-quality industrial fabrication,
-                        structural engineering, and custom metal solutions. We specialize in precision work, durability, and
-                        innovative engineering tailored to client requirements.</p>
-                    <p>With years of hands-on experience, we provide end-to-end fabrication services including design,
-                        manufacturing, installation, and maintenance for various industrial and commercial projects.</p>
-                    <ul class="listext list-unstyled mb-30">
-                        <li>
-                            <div class="listext-icon"> <i class="norc-d-check"></i> </div>
-                            <div class="listext-text">
-                                <p>10+ years of experience in engineering & fabrication</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="listext-icon"> <i class="norc-d-check"></i> </div>
-                            <div class="listext-text">
-                                <p>200+ successfully completed industrial projects</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="listext-icon"> <i class="norc-d-check"></i> </div>
-                            <div class="listext-text">
-                                <p>High-quality workmanship & client satisfaction</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="line-dec"></div>
-                    <div class="about-bottom"> <img src="{{ asset('template/img/signature-dark.svg') }}" alt=""
-                            class="image about-signature">
-                        <div class="about-name-wrapper">
-                            <div class="about-name">Omkar Engineering</div>
-                            <div class="about-rol">Fabrication Experts</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="about-img fl-wrap">
-                        <img src="{{ asset('template/img/about4.jpg') }}" class="img-fluid" alt="">
-                        <div class="about-img-hotifer color-bg">
-                            <p>Our years of fabrication experience ensure strong, reliable, and precise engineering
-                                solutions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Info -->
-    <section class="about-info section-padding bg-gray">
-        <div class="container">
-            <div class="about-info">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="about-info-img mb-60">
-                            <div class="img"> <img src="{{ asset('template/img/about2.jpg') }}" class="img-fluid"
-                                    alt=""> </div>
-                        </div>
-                        <div class="section-title2">The journey of<span>Omkar Engineering & Fabrication</span></div>
-                        <p>Founded with a vision to deliver high-quality engineering solutions, Omkar Engineering &
-                            Fabrication has grown into a reliable partner for industrial fabrication, structural work, and
-                            customized metal projects.</p>
-                    </div>
-                    <div class="col-md-6 offset-md-1 pt-60">
-                        <div class="section-title2">Excellence in <span>Engineering & Fabrication Services</span></div>
-                        <p>We focus on precision engineering, advanced fabrication techniques, and timely project delivery
-                            to meet the highest industry standards and customer expectations.
-                        </p>
-                        <div class="about-info-img pt-60">
-                            <div class="img"> <img src="{{ asset('template/img/about3.jpg') }}" class="img-fluid"
-                                    alt=""> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team -->
-    <section class="team section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle">Skilled Professionals</div>
-                    <div class="section-title">Meet <span>Our Experts</span></div>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="team-card mb-30">
-                        <div class="team-img"><img src="{{ asset('template/img/team/1.jpg') }}" alt=""
-                                class="w-100"></div>
-                        <div class="team-content">
-                            <h3 class="team-title">Adam Norman<span>CEO & Founder</span></h3>
-                            <p class="team-text">Nulla quis efficitur lacus sulvinar suere ausue in eduis euro vesatien
-                                arcuman ontese auctor ac aleuam aretra.</p>
-                            <div class="social">
-                                <div class="full-width">
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <div class="square-flip">
+                        <div class="square bg-img" data-background="{{ asset('template/img/services/1.jpg') }}">
+                            <div class="square-container d-flex align-items-end justify-content-end">
+                                <div class="box-title">
+                                    <div><i class="norc-new-construction"></i></div>
+                                    <h4>Project Planning</h4>
                                 </div>
                             </div>
+                            <div class="flip-overlay"></div>
                         </div>
-                        <div class="title-box">
-                            <h3 class="mb-0">Adam Norman<span>CEO & Founder</span></h3>
+                        <div class="square2">
+                            <div class="square-container2">
+                                <h4>Project Planning</h4>
+                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
+                                    risus nesuen.</p>
+                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="team-card mb-30">
-                        <div class="team-img"><img src="{{ asset('template/img/team/2.jpg') }}" alt=""
-                                class="w-100"></div>
-                        <div class="team-content">
-                            <h3 class="team-title">Enrico Brown<span>Head of Sales</span></h3>
-                            <p class="team-text">Nulla quis efficitur lacus sulvinar suere ausue in eduis euro vesatien
-                                arcuman ontese auctor ac aleuam aretra.</p>
-                            <div class="social">
-                                <div class="full-width">
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <div class="square-flip">
+                        <div class="square bg-img" data-background="{{ asset('template/img/services/2.jpg') }}">
+                            <div class="square-container d-flex align-items-end justify-content-end">
+                                <div class="box-title">
+                                    <div><i class="norc-construction-sign"></i></div>
+                                    <h4>General Contracting</h4>
                                 </div>
                             </div>
+                            <div class="flip-overlay"></div>
                         </div>
-                        <div class="title-box">
-                            <h3 class="mb-0">Enrico Brown<span>Head of Sales</span></h3>
+                        <div class="square2">
+                            <div class="square-container2">
+                                <h4>General Contracting</h4>
+                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
+                                    risus nesuen.</p>
+                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="team-card mb-30">
-                        <div class="team-img"><img src="{{ asset('template/img/team/3.jpg') }}" alt=""
-                                class="w-100"></div>
-                        <div class="team-content">
-                            <h3 class="team-title">Olivia White<span>Lead Project Manager</span></h3>
-                            <p class="team-text">Nulla quis efficitur lacus sulvinar suere ausue in eduis euro vesatien
-                                arcuman ontese auctor ac aleuam aretra.</p>
-                            <div class="social">
-                                <div class="full-width">
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <div class="square-flip">
+                        <div class="square bg-img" data-background="{{ asset('template/img/services/3.jpg') }}">
+                            <div class="square-container d-flex align-items-end justify-content-end">
+                                <div class="box-title">
+                                    <div><i class="norc-factory"></i></div>
+                                    <h4>Industrial / Manufacturing</h4>
                                 </div>
                             </div>
+                            <div class="flip-overlay"></div>
                         </div>
-                        <div class="title-box">
-                            <h3 class="mb-0">Olivia White<span>Lead Project Manager</span></h3>
+                        <div class="square2">
+                            <div class="square-container2">
+                                <h4>Industrial / Manufacturing</h4>
+                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
+                                    risus nesuen.</p>
+                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="square-flip">
+                        <div class="square bg-img" data-background="{{ asset('template/img/services/4.jpg') }}">
+                            <div class="square-container d-flex align-items-end justify-content-end">
+                                <div class="box-title">
+                                    <div><i class="norc-radiation"></i></div>
+                                    <h4>Energy and Environment</h4>
+                                </div>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                        <div class="square2">
+                            <div class="square-container2">
+                                <h4>Energy and Environment</h4>
+                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
+                                    risus nesuen.</p>
+                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="square-flip">
+                        <div class="square bg-img" data-background="{{ asset('template/img/services/2.jpg') }}">
+                            <div class="square-container d-flex align-items-end justify-content-end">
+                                <div class="box-title">
+                                    <div><i class="norc-cogwheel"></i></div>
+                                    <h4>Const. Management</h4>
+                                </div>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                        <div class="square2">
+                            <div class="square-container2">
+                                <h4>Const. Management</h4>
+                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
+                                    risus nesuen.</p>
+                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="square-flip">
+                        <div class="square bg-img" data-background="{{ asset('template/img/services/3.jpg') }}">
+                            <div class="square-container d-flex align-items-end justify-content-end">
+                                <div class="box-title">
+                                    <div><i class="norc-pantone"></i></div>
+                                    <h4>Interior Design</h4>
+                                </div>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                        <div class="square2">
+                            <div class="square-container2">
+                                <h4>Interior Design</h4>
+                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
+                                    risus nesuen.</p>
+                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,18 +156,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="item text-center">
-                            <span class="icon">
+                        <div class="item text-center"> <span class="icon">
                                 <i class="front norc-design"></i>
                                 <i class="back norc-design"></i>
                             </span>
                             <h3 class="count">675</h3>
-                            <h6><span>01.</span> Fabrication Projects</h6>
+                            <h6><span>01.</span> Projects Design</h6>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="item text-center">
-                            <span class="icon">
+                        <div class="item text-center"> <span class="icon">
                                 <i class="font norc-b-meeting"></i>
                                 <i class="back norc-b-meeting"></i>
                             </span>
@@ -204,8 +174,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="item text-center">
-                            <span class="icon">
+                        <div class="item text-center"> <span class="icon">
                                 <i class="front norc-paper-diploma"></i>
                                 <i class="back norc-paper-diploma"></i>
                             </span>
@@ -222,7 +191,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-subtitle">Our Strength</div>
+                    <div class="section-subtitle">Our Values</div>
                     <div class="section-title">Core <span>Values</span></div>
                 </div>
             </div>
@@ -231,8 +200,8 @@
                     <div class="single-facility">
                         <span class="norc-construction-sign"></span>
                         <h5>Safety</h5>
-                        <p>We prioritize workplace safety and follow strict safety standards in every fabrication and
-                            engineering project.</p>
+                        <p>Safety will always come first as we strive for accident-free projects. Fusce tincidunt nis ace
+                            park norttito amet space.</p>
                         <div class="facility-shape"> <span class="norc-construction-sign"></span> </div>
                     </div>
                 </div>
@@ -240,7 +209,8 @@
                     <div class="single-facility">
                         <span class="norc-bulb-63"></span>
                         <h5>Innovation</h5>
-                        <p>We adopt modern fabrication techniques and innovative solutions to deliver efficient results.</p>
+                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a
+                            menas vitae.</p>
                         <div class="facility-shape"> <span class="norc-bulb-63"></span> </div>
                     </div>
                 </div>
@@ -248,7 +218,8 @@
                     <div class="single-facility">
                         <span class="norc-paper-diploma"></span>
                         <h5>Quality</h5>
-                        <p>Our commitment to quality ensures durable, precise, and reliable engineering outputs.</p>
+                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a
+                            menas vitae.</p>
                         <div class="facility-shape"> <span class="norc-paper-diploma"></span> </div>
                     </div>
                 </div>
@@ -256,23 +227,26 @@
                     <div class="single-facility">
                         <span class="norc-chess-knight"></span>
                         <h5>Integrity</h5>
-                        <p>We maintain transparency, honesty, and professionalism in all our projects.</p>
+                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a
+                            menas vitae.</p>
                         <div class="facility-shape"> <span class="norc-chess-knight"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility">
                         <span class="norc-strategy"></span>
-                        <h5>Execution</h5>
-                        <p>We ensure timely delivery with efficient project planning and execution.</p>
+                        <h5>Strategy</h5>
+                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a
+                            menas vitae.</p>
                         <div class="facility-shape"> <span class="norc-strategy"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility">
                         <span class="norc-flag-points-32"></span>
-                        <h5>Customer Focus</h5>
-                        <p>Client satisfaction is our priority, and we deliver solutions based on customer needs.</p>
+                        <h5>Inclusion</h5>
+                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a
+                            menas vitae.</p>
                         <div class="facility-shape"> <span class="norc-flag-points-32"></span> </div>
                     </div>
                 </div>
@@ -394,4 +368,5 @@
             </div>
         </div>
     </section>
-@endsection
+
+@endsection()
