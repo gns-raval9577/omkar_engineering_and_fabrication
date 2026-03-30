@@ -6,6 +6,7 @@ use App\Filament\Admin\Resources\ProductImages\ProductImagesResource;
 use App\Models\ProductImages;
 use Filament\Resources\Pages\CreateRecord;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Arr;
 
 class CreateProductImages extends CreateRecord
@@ -16,19 +17,21 @@ class CreateProductImages extends CreateRecord
     {
         $images = array_values(array_filter(Arr::wrap($data['image'] ?? [])));
 
-        $record = ProductImages::create([
-            ...$data,
-            'image' => $images[0] ?? null,
-        ]);
-
-        foreach (array_slice($images, 1) as $image) {
-            ProductImages::create([
+        return DB::transaction(function () use ($data, $images): Model {
+            $record = ProductImages::create([
                 ...$data,
-                'image' => $image,
+                'image' => $images[0] ?? null,
             ]);
-        }
 
-        return $record;
+            foreach (array_slice($images, 1) as $image) {
+                ProductImages::create([
+                    ...$data,
+                    'image' => $image,
+                ]);
+            }
+
+            return $record;
+        });
     }
 
     protected function getRedirectUrl(): string
