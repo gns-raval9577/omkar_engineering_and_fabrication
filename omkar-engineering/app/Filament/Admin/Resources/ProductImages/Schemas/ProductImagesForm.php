@@ -6,7 +6,6 @@ use Filament\Schemas\Schema;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
-use App\Models\Product;
 
 class ProductImagesForm
 {
@@ -14,18 +13,19 @@ class ProductImagesForm
     {
         return $schema
             ->components([
-                TextInput::make('title')
-                    ->required()
-                    ->maxLength(255),
                 Select::make('product_id')
                     ->label('Product')
                     ->relationship('product', 'title')
+                    ->required(),
+                TextInput::make('title')
                     ->required()
-                    ->searchable(),
+                    ->maxLength(255),
                 FileUpload::make('image')
                     ->image()
+                    ->multiple(fn (string $operation): bool => $operation === 'create')
                     ->directory('product-images')
                     ->imagePreviewHeight('100')
+                    ->required()
                     ->maxSize(1024),
             ]);
     }

@@ -2,21 +2,16 @@
 
 namespace App\Filament\Admin\Resources\Products\Tables;
 
-use App\Models\Product;
-use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
-use Filament\Notifications\Notification;
 use Filament\Support\Enums\FontWeight;
-use Filament\Support\Icons\Heroicon;
-use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
-use Filament\Tables\Columns\ToggleColumn;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 
 class ProductsTable
 {
@@ -32,11 +27,19 @@ class ProductsTable
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('description')
+                    ->formatStateUsing(fn (?string $state): string => Str::of(strip_tags($state ?? ''))->squish()->toString())
                     ->searchable()
-                    ->sortable(),
+                    ->sortable()
+                    ->limit(80)
+                    ->wrap()
+                    ->tooltip(fn ($state): ?string => filled($state) ? Str::of(strip_tags($state))->squish()->toString() : null),
                 TextColumn::make('sort_description')
+                    ->label('Short Description')
+                    ->formatStateUsing(fn (?string $state): string => Str::of(strip_tags($state ?? ''))->squish()->toString())
                     ->searchable()
-                    ->sortable(),
+                    ->sortable()
+                    ->limit(50)
+                    ->toggleable(isToggledHiddenByDefault: true),
                 ImageColumn::make('image')
                     ->circular()
                     ->size(48),
@@ -56,4 +59,3 @@ class ProductsTable
             ]);
     }
 }
-
