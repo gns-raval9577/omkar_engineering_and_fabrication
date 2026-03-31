@@ -31,9 +31,9 @@ class ProductImagesTable
                     ->searchable()
                     ->sortable()
                     ->label('Product'),
-                ImageColumn::make('image')
-                    ->circular()
-                    ->size(48),
+                // ImageColumn::make('image')
+                //     ->circular()
+                //     ->size(48),
                 TextColumn::make('updated_at')
                     ->label('Last modified at')
                     ->date(),
