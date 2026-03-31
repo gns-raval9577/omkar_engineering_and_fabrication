@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Admin\Resources\Contacts\ContactResource;
 use App\Filament\Admin\Resources\ProductImages\ProductImagesResource;
 use App\Filament\Admin\Resources\Products\ProductResource;
 use App\Filament\Admin\Resources\Projects\ProjectsResource;
@@ -39,6 +40,7 @@ class AdminPanelProvider extends PanelProvider
                 ProductResource::class,
                 ProductImagesResource::class,
                 ProjectsResource::class,
+                ContactResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Admin/Pages'), for: 'App\Filament\Admin\Pages')
             ->pages([
