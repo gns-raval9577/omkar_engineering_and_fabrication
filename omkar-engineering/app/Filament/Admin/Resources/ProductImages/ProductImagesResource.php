@@ -34,6 +34,19 @@ class ProductImagesResource extends Resource
         return ProductImagesTable::configure($table);
     }
 
+    public static function getEloquentQuery(): Builder
+    {
+        $table = (new ProductImages())->getTable();
+
+        return parent::getEloquentQuery()
+            ->whereIn("{$table}.id", function ($query) use ($table) {
+                $query->from($table)
+                    ->selectRaw('MIN(id)')
+                    ->whereNull('deleted_at')
+                    ->groupBy('product_id');
+            });
+    }
+
     public static function getRelations(): array
     {
         return [
