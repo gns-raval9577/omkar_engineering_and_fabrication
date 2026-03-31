@@ -12,7 +12,7 @@
                                     </div>
                                     <div class="footer-contact-link-content">
                                         <h6>Call us</h6>
-                                        <p>+1 203-333-4444</p>
+                                        <p>+91 8141133144</p>
                                     </div>
                                 </div>
                                 <div class="footer-contact-links-divider"></div>
@@ -22,7 +22,7 @@
                                     </div>
                                     <div class="footer-contact-link-content">
                                         <h6>Write to us</h6>
-                                        <p>info@construction.com</p>
+                                        <p>omkarengineers.fab@gmail.com</p>
                                     </div>
                                 </div>
                                 <div class="footer-contact-links-divider"></div>
@@ -32,7 +32,7 @@
                                     </div>
                                     <div class="footer-contact-link-content">
                                         <h6>Address</h6>
-                                        <p>24 King St, SC 29401 USA</p>
+                                        <p>C/42,Maruti Industrial Estate,Vatva-Ahmedabad</p>
                                     </div>
                                 </div>
                             </div>
@@ -46,9 +46,11 @@
                     <!-- about & social icons -->
                     <div class="col-md-4 widget-area">
                         <div class="widget clearfix">
-                            <h3 class="widget-title">About Norc.</h3>
+                            <h3 class="widget-title">About Omkar.</h3>
                             <div class="widget-text">
-                                <p>Quisque imperdiet sapien porttito the bibendum sellentesque the commodo erat acar accumsa lobortis, enim diam the nesuen.</p>
+                                <p>Omkar Engineering and Fabrication provides reliable engineering and fabrication
+                                    services with a focus on quality workmanship, durable solutions, and customer
+                                    satisfaction.</p>
                                 <div class="social-icons">
                                     <ul class="list-inline">
                                         <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
@@ -76,7 +78,8 @@
                     <div class="col-md-4 widget-area">
                         <div class="widget clearfix">
                             <h3 class="widget-title">Subscribe</h3>
-                            <p>Want to be notified about our news. Just sign up and we'll send you a notification by email.</p>
+                            <p>Stay updated with Omkar Engineering and Fabrication. Sign up to receive our latest news,
+                                project updates, and service information directly in your email.</p>
                             <div class="widget-newsletter">
                                 <form action="#">
                                     <input type="email" placeholder="Email Address" required>
@@ -91,7 +94,8 @@
             <div class="bottom-footer-text">
                 <div class="row copyright">
                     <div class="col-md-12">
-                        <p class="mb-0">&copy;2026 All rights reserved. Designed by <a href="https://1.envato.market/7ZzYQ" target="_blank">DuruThemes</a>.</p>
+                        <p class="mb-0">&copy;2026 All rights reserved. Designed by <a href=""
+                                target="_blank">Name</a>.</p>
                     </div>
                 </div>
             </div>

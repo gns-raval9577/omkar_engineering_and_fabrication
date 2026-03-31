@@ -20,40 +20,41 @@
     <section class="contact section-padding">
         <div class="container">
             <div class="row mb-90">
-                <div class="col-md-5 mb-60">
+                <div class="col-md-4 mb-60">
                     <h5>Contact Information</h5>
-                    <p class="mb-30">Contact nullam usamcoen the drana duru metus utah osare asya mavna busnini viventa the
-                        ornare ipsum. Curabitur luctus mana numsation pellentesque the miss tenis mollie.</p>
+                    <p class="mb-30">Contact Omkar Engineering and Fabrication for quality fabrication services and
+                        reliable engineering solutions.</p>
                     <div class="contact-link">
                         <div class="contact-link-icon"><span class="norc-phone"></span></div>
                         <div class="contact-link-content">
                             <div class="contact-link-title">Call us</div>
-                            <div class="contact-link-text">+1 203-333-4444</div>
+                            <div class="contact-link-text">+91 8141133144</div>
                         </div>
                     </div>
                     <div class="contact-link">
                         <div class="contact-link-icon"><span class="fa fa-fax"></span></div>
                         <div class="contact-link-content">
                             <div class="contact-link-title">Fax Number</div>
-                            <div class="contact-link-text">+1 203-333-4400</div>
+                            <div class="contact-link-text">+91 8141133144</div>
                         </div>
                     </div>
                     <div class="contact-link">
                         <div class="contact-link-icon"><span class="norc-mail"></span></div>
                         <div class="contact-link-content">
                             <div class="contact-link-title">Send us an email</div>
-                            <div class="contact-link-text">info@construction.com</div>
+                            <div class="contact-link-text">omkarengineers.fab@gmail.com</div>
                         </div>
                     </div>
                     <div class="contact-link">
                         <div class="contact-link-icon"><span class="norc-square-pin"></span></div>
                         <div class="contact-link-content">
                             <div class="contact-link-title">Visit our office</div>
-                            <div class="contact-link-text">24 King St, Charleston, 29401 USA</div>
+                            <div class="contact-link-text">C/42,Maruti Industrial Estate ,Opp.Kirti Tools,Phase-1,Vatva
+                                GIDC,Ahmedabad-382445</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 offset-md-2">
+                <div class="col-md-6 offset-md-2">
                     <div class="form-wrap">
                         <div class="form-box">
                             <h5>Get in touch</h5>
@@ -113,9 +114,9 @@
             <!-- Map Section -->
             <div class="row">
                 <div class="col-md-12 map-color animate-box" data-animate-effect="fadeInUp">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1573147.7480448114!2d-74.84628175962355!3d41.04009641088412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25856139b3d33%3A0xb2739f33610a08ee!2s1616%20Broadway%2C%20New%20York%2C%20NY%2010019%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1646760525018!5m2!1str!2str"
-                        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps?q=22.9667998,72.6311831&hl=en&z=17&output=embed" width="100%"
+                        height="600" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -135,42 +136,38 @@
                     <div class="accordion">
                         <div class="item">
                             <div class="title">
-                                <h6>What is the experience of your employees?</h6>
+                                <h6>What services do you provide?</h6>
                             </div>
                             <div class="accordion-info" style="display: none;">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                    anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum nulla.</p>
+                                <p>We provide engineering and fabrication services including structural fabrication, metal
+                                    works, welding, and custom industrial solutions tailored to client requirements.</p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="title">
-                                <h6>What tools do you use in construction?</h6>
+                                <h6>Do you handle custom fabrication projects?</h6>
                             </div>
                             <div class="accordion-info" style="display: none;">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                    anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum nulla.</p>
+                                <p>Yes, we specialize in custom fabrication projects based on your design, size, and
+                                    material requirements with high precision and quality standards.</p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="title">
-                                <h6>Do you have free home delivery in the US?</h6>
+                                <h6>What materials do you work with?</h6>
                             </div>
                             <div class="accordion-info" style="display: none;">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                    anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum nulla.</p>
+                                <p>We work with a variety of materials including mild steel, stainless steel, aluminum, and
+                                    other metals depending on the project needs.</p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="title">
-                                <h6>Can you help with the construction documents?</h6>
+                                <h6>How can I get a quotation?</h6>
                             </div>
                             <div class="accordion-info" style="display: none;">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                    anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum nulla.</p>
+                                <p>You can contact us with your project details, drawings, or requirements. Our team will
+                                    review and provide a competitive quotation promptly.</p>
                             </div>
                         </div>
                     </div>
