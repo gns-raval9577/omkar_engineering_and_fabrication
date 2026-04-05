@@ -5,16 +5,19 @@ namespace App\Filament\Admin\Resources\Products;
 use App\Filament\Admin\Resources\Products\Pages\CreateProduct;
 use App\Filament\Admin\Resources\Products\Pages\EditProduct;
 use App\Filament\Admin\Resources\Products\Pages\ListProducts;
+use App\Filament\Admin\Resources\Products\Pages\ViewProduct;
+use App\Filament\Admin\Resources\Products\RelationManagers\ImagesRelationManager;
 use App\Filament\Admin\Resources\Products\Schemas\ProductForm;
 use App\Filament\Admin\Resources\Products\Tables\ProductsTable;
 use App\Models\Product;
 use BackedEnum;
+use Filament\Infolists\Components\ImageEntry;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
+use Filament\Schemas\Components\Section;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class ProductResource extends Resource
 {
@@ -34,17 +37,38 @@ protected static ?string $recordTitleAttribute = 'Products';
         return ProductsTable::configure($table);
     }
 
+    public static function infolist(Schema $schema): Schema
+    {
+        return $schema
+            ->columns(1)
+            ->components([
+                Section::make('Product Details')
+                    ->columns(2)
+                    ->schema([
+                        TextEntry::make('title')
+                            ->label('Title'),
+                        TextEntry::make('slug')
+                            ->label('Slug'),
+                        ImageEntry::make('image')
+                            ->label('Main Product Image')
+                            ->height(120),
+                        TextEntry::make('sort_description')
+                            ->label('Short Description')
+                            ->html()
+                            ->columnSpanFull(),
+                        TextEntry::make('description')
+                            ->label('Description')
+                            ->html()
+                            ->formatStateUsing(fn (?string $state): string => filled($state) ? $state : '-')
+                            ->columnSpanFull(),
+                    ]),
+            ]);
+    }
+
     public static function getRelations(): array
     {
         return [
-            //
-        ];
-    }
-
-    public static function getRelationManagers(): array
-    {
-        return [
-            // RelationManagers\ImagesRelationManager::class,
+            ImagesRelationManager::class,
         ];
     }
 
@@ -53,6 +77,7 @@ protected static ?string $recordTitleAttribute = 'Products';
         return [
             'index' => ListProducts::route('/'),
             'create' => CreateProduct::route('/create'),
+            'view' => ViewProduct::route('/{record}'),
             'edit' => EditProduct::route('/{record}/edit'),
         ];
     }
