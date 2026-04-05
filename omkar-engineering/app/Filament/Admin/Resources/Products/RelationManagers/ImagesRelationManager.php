@@ -16,6 +16,7 @@ use Filament\Support\Enums\FontWeight;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
@@ -49,6 +50,10 @@ class ImagesRelationManager extends RelationManager
     {
         return $table
             ->recordTitleAttribute('title')
+            ->modifyQueryUsing(fn (Builder $query): Builder => $query->latest('updated_at'))
+            ->paginated([10, 25, 50])
+            ->defaultPaginationPageOption(10)
+            ->deferLoading()
             ->columns([
                 ImageColumn::make('image')
                     ->square()

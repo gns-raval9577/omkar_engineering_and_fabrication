@@ -15,13 +15,19 @@ use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Support\Enums\FontWeight;
-use App\Models\ProductImages;
+use Illuminate\Database\Eloquent\Builder;
 
 class ProductImagesTable
 {
     public static function configure(Table $table): Table
     {
         return $table
+            ->modifyQueryUsing(fn (Builder $query): Builder => $query
+                ->with(['product:id,title'])
+                ->latest('updated_at'))
+            ->paginated([10, 25, 50])
+            ->defaultPaginationPageOption(10)
+            ->deferLoading()
             ->columns([
                 TextColumn::make('title')
                     ->searchable()
@@ -29,14 +35,15 @@ class ProductImagesTable
                     ->weight(FontWeight::Medium),
                 TextColumn::make('product.title')
                     ->searchable()
-                    ->sortable()
                     ->label('Product'),
-                // ImageColumn::make('image')
-                //     ->circular()
-                //     ->size(48),
+                ImageColumn::make('image')
+                    ->circular()
+                    ->size(48)
+                    ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('updated_at')
                     ->label('Last modified at')
-                    ->date(),
+                    ->dateTime('d M Y h:i A')
+                    ->sortable(),
             ])
             ->filters([
                 TrashedFilter::make(),
