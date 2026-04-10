@@ -18,7 +18,7 @@ class TestimonialsTable
     public static function configure(Table $table): Table
     {
         return $table
-            ->modifyQueryUsing(fn (Builder $query): Builder => $query->latest('updated_at'))
+            ->modifyQueryUsing(fn (Builder $query): Builder => $query->forAdminIndex()->latest('updated_at'))
             ->paginated([10, 25, 50])
             ->defaultPaginationPageOption(10)
             ->deferLoading()

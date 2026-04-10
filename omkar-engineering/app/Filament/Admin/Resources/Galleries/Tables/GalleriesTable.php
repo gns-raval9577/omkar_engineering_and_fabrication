@@ -3,17 +3,13 @@
 namespace App\Filament\Admin\Resources\Galleries\Tables;
 
 use Filament\Actions\ActionGroup;
-use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Actions\ForceDeleteBulkAction;
-use Filament\Actions\RestoreBulkAction;
 use Filament\Actions\ViewAction;
 use Filament\Support\Enums\FontWeight;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -22,7 +18,7 @@ class GalleriesTable
     public static function configure(Table $table): Table
     {
         return $table
-            ->modifyQueryUsing(fn (Builder $query): Builder => $query->latest('updated_at'))
+            ->modifyQueryUsing(fn (Builder $query): Builder => $query->forAdminIndex()->latest('updated_at'))
             ->paginated([10, 25, 50])
             ->defaultPaginationPageOption(10)
             ->deferLoading()
