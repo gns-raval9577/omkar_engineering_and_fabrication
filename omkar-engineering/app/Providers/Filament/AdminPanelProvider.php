@@ -3,8 +3,10 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Admin\Resources\Contacts\ContactResource;
+use App\Filament\Admin\Resources\Galleries\GalleryResource;
 use App\Filament\Admin\Resources\Products\ProductResource;
 use App\Filament\Admin\Resources\Projects\ProjectsResource;
+use App\Filament\Admin\Resources\Testimonials\TestimonialResource;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -37,8 +39,10 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->resources([
                 ProductResource::class,
+                GalleryResource::class,
                 ProjectsResource::class,
                 ContactResource::class,
+                TestimonialResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Admin/Pages'), for: 'App\Filament\Admin\Pages')
             ->pages([

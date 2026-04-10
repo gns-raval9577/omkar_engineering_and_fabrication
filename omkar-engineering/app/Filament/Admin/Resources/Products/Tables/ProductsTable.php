@@ -11,6 +11,7 @@ use Filament\Support\Enums\FontWeight;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 
 class ProductsTable
@@ -18,6 +19,10 @@ class ProductsTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->modifyQueryUsing(fn (Builder $query): Builder => $query->latest('updated_at'))
+            ->paginated([10, 25, 50])
+            ->defaultPaginationPageOption(10)
+            ->deferLoading()
             ->columns([
                 TextColumn::make('title')
                     ->searchable()
@@ -28,16 +33,12 @@ class ProductsTable
                     ->sortable(),
                 TextColumn::make('description')
                     ->formatStateUsing(fn (?string $state): string => Str::of(strip_tags($state ?? ''))->squish()->toString())
-                    ->searchable()
-                    ->sortable()
                     ->limit(80)
                     ->wrap()
                     ->tooltip(fn ($state): ?string => filled($state) ? Str::of(strip_tags($state))->squish()->toString() : null),
                 TextColumn::make('sort_description')
                     ->label('Short Description')
                     ->formatStateUsing(fn (?string $state): string => Str::of(strip_tags($state ?? ''))->squish()->toString())
-                    ->searchable()
-                    ->sortable()
                     ->limit(50)
                     ->toggleable(isToggledHiddenByDefault: true),
                 ImageColumn::make('image')
