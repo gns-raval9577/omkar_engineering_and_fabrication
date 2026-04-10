@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Filament\Admin\Resources\Galleries\Pages;
+
+use App\Filament\Admin\Resources\Galleries\GalleryResource;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\ForceDeleteAction;
+use Filament\Actions\RestoreAction;
+use Filament\Resources\Pages\EditRecord;
+
+class EditGallery extends EditRecord
+{
+    protected static string $resource = GalleryResource::class;
+
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
+}
