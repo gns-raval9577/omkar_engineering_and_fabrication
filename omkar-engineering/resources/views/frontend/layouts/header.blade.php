@@ -40,7 +40,7 @@
             <!-- Logo -->
             <div class="logo-wrapper">
                 <a class="logo" href="index-2.html"> <img src="{{ asset('template/img/logo-dark.png') }}"
-                        class="logo-img" alt="sdfs"> </a>
+                        style="width: 130px;" class="logo-img" alt="sdfs"> </a>
                 <!-- <a class="logo" href="index.html"> <h2>Norc.</h2></a> -->
             </div>
             <!-- Button -->
