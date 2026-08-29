@@ -6,11 +6,12 @@
                     <!--Top Left-->
                     <div class="top-left">
                         <ul class="links clearfix">
-                            <li><a href="tel:+12033334444"><span class="fa fa-phone"></span>+1 203-333-4444</a></li>
-                            <li><a href="mailto:info@construction.com"><span
-                                        class="fa fa-envelope"></span>info@construction.com</a></li>
+                            <li><a href="tel:+12033334444"><span class="fa fa-phone"></span>+91 8141133144</a></li>
+                            <li><a href="mailto:omkarengineers.fab@gmail.com"><span
+                                        class="fa fa-envelope"></span>omkarengineers.fab@gmail.com</a></li>
                             <li><a href="https://goo.gl/maps/zgdqkg4hFFR8pfDS8" target="_blank"><span
-                                        class="fa fa-map-marker"></span>24 King St, SC 29401 USA</a></li>
+                                        class="fa fa-map-marker"></span>C/42,Maruti Industrial
+                                    Estate,Vatva</a></li>
                         </ul>
                     </div>
                     <!--Top Right-->
@@ -39,8 +40,10 @@
         <div class="container">
             <!-- Logo -->
             <div class="logo-wrapper">
-                <a class="logo" href="index-2.html"> <img src="{{ asset('template/img/logo-dark.png') }}"
-                        style="width: 130px;" class="logo-img" alt="sdfs"> </a>
+                <a class="logo" href="index-2.html">
+                    <img src="{{ asset('template/img/logo-dark.png') }}" class="logo-img"
+                        alt="Omkar Engineering and Fabrication logo">
+                </a>
                 <!-- <a class="logo" href="index.html"> <h2>Norc.</h2></a> -->
             </div>
             <!-- Button -->

@@ -42,7 +42,7 @@
                         <div class="contact-link-icon"><span class="norc-mail"></span></div>
                         <div class="contact-link-content">
                             <div class="contact-link-title">Send us an email</div>
-                            <div class="contact-link-text">info@construction.com</div>
+                            <div class="contact-link-text">omkarengineers.fab@gmail.com</div>
                         </div>
                     </div>
                     <div class="contact-link">

@@ -53,7 +53,7 @@ $(function () {
             logo.attr('src', 'template/img/logo.png');
         } else {
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'template/img/logo-dark.png');
+            logo.attr('src', 'template/img/logo.png');
         }
     });
 
