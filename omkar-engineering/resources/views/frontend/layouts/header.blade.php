@@ -39,9 +39,8 @@
         <div class="container">
             <!-- Logo -->
             <div class="logo-wrapper">
-                <a class="logo" href="index-2.html"> <img src="{{ asset('template/img/logo-dark.png') }}"
-                        style="width: 130px;" class="logo-img" alt="sdfs"> </a>
-                <!-- <a class="logo" href="index.html"> <h2>Norc.</h2></a> -->
+                <a class="logo" href="{{ route('home') }}"> <img src="{{ asset('template/img/logo-dark.png') }}"
+                        style="width: 130px;" class="logo-img" alt="Omkar Engineering and Fabrication"> </a>
             </div>
             <!-- Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"

@@ -27,6 +27,8 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
+            ->brandName('Omkar Engineering and Fabrication')
+            ->favicon(asset('template/img/favicon.png'))
             ->login() 
             ->registration()
             ->colors([

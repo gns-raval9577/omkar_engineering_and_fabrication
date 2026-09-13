@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>@yield('title')</title>
-
-    <!-- CSS -->
-
-    @include('frontend.layouts.head')
-</head>
+@include('frontend.layouts.head')
 
 <body>
 

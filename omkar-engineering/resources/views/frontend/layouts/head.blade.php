@@ -2,11 +2,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('title', 'NORC - Construction')</title>
+    <title>@hasSection('title')@yield('title') - {{ config('app.name', 'Omkar Engineering and Fabrication') }}@else{{ config('app.name', 'Omkar Engineering and Fabrication') }}@endif</title>
 
-    <meta name="description" content="NORC. is a professional template for construction, roofing, and renovation companies. Showcase your building projects with a clean, Bootstrap 5-powered responsive design.">
-    <meta name="keywords" content="construction, renovation, building, roofing, engineering, architecture, plumbing, maintenance, industrial, bootstrap 5">
-    <meta name="author" content="DuruThemes">
+    <meta name="description" content="Omkar Engineering and Fabrication - Premium industrial fabrication and engineering services.">
+    <meta name="keywords" content="engineering, fabrication, industrial, manufacturing, construction, Omkar Engineering">
+    <meta name="author" content="Omkar Engineering and Fabrication">
     <meta name="robots" content="index, follow">
 
     <link rel="canonical" href="{{ url()->current() }}">
