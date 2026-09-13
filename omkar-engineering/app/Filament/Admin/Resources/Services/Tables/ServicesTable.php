@@ -32,17 +32,20 @@ class servicesTable
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('description')
-                    ->searchable()
-                    ->sortable(),
+                    ->limit(50)
+                    ->wrap()
+                    ->searchable(),
                 TextColumn::make('sort_description')
-                    ->searchable()
-                    ->sortable(),
+                    ->limit(50)
+                    ->wrap()
+                    ->searchable(),
                 ImageColumn::make('image')
                     ->circular()
                     ->size(48),
                 TextColumn::make('updated_at')
                     ->label('Last modified at')
-                    ->date(),
+                    ->date()
+                    ->sortable(),
             ])
             ->recordActions([
                 ActionGroup::make([
