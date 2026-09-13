@@ -12,7 +12,7 @@
                                     </div>
                                     <div class="footer-contact-link-content">
                                         <h6>Call us</h6>
-                                        <p>+91 8141133144</p>
+                                        <p>+1 203-333-4444</p>
                                     </div>
                                 </div>
                                 <div class="footer-contact-links-divider"></div>
@@ -22,7 +22,7 @@
                                     </div>
                                     <div class="footer-contact-link-content">
                                         <h6>Write to us</h6>
-                                        <p>omkarengineers.fab@gmail.com</p>
+                                        <p>info@construction.com</p>
                                     </div>
                                 </div>
                                 <div class="footer-contact-links-divider"></div>
@@ -48,8 +48,7 @@
                         <div class="widget clearfix">
                             <h3 class="widget-title">About Norc.</h3>
                             <div class="widget-text">
-                                <p>Quisque imperdiet sapien porttito the bibendum sellentesque the commodo erat acar
-                                    accumsa lobortis, enim diam the nesuen.</p>
+                                <p>Quisque imperdiet sapien porttito the bibendum sellentesque the commodo erat acar accumsa lobortis, enim diam the nesuen.</p>
                                 <div class="social-icons">
                                     <ul class="list-inline">
                                         <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
@@ -77,8 +76,7 @@
                     <div class="col-md-4 widget-area">
                         <div class="widget clearfix">
                             <h3 class="widget-title">Subscribe</h3>
-                            <p>Want to be notified about our news. Just sign up and we'll send you a notification by
-                                email.</p>
+                            <p>Want to be notified about our news. Just sign up and we'll send you a notification by email.</p>
                             <div class="widget-newsletter">
                                 <form action="#">
                                     <input type="email" placeholder="Email Address" required>
@@ -93,8 +91,7 @@
             <div class="bottom-footer-text">
                 <div class="row copyright">
                     <div class="col-md-12">
-                        <p class="mb-0">&copy;2026 All rights reserved. Designed by <a
-                                href="https://1.envato.market/7ZzYQ" target="_blank">DuruThemes</a>.</p>
+                        <p class="mb-0">&copy;2026 All rights reserved. Designed by <a href="https://1.envato.market/7ZzYQ" target="_blank">DuruThemes</a>.</p>
                     </div>
                 </div>
             </div>
