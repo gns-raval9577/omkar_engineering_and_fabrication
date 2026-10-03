@@ -140,7 +140,7 @@
 
                     <h1 class="ecom-main-title">Create Account</h1>
                     <p class="ecom-main-subtitle">
-                        Fill in your details below to register as an administrator for the store and portal.
+                        Enter your details to register as an administrator.
                     </p>
                 </div>
 
@@ -165,7 +165,6 @@
                         </svg>
                         <span>256-Bit SSL Encrypted Registration Gateway</span>
                     </div>
-                    <p class="ecom-security-sub">Authorized personnel only. All access events are audited.</p>
                 </div>
             </div>
         </div>
@@ -200,20 +199,70 @@
         --omkar-bg-surface: #ffffff;
     }
 
-    body {
+    /* Universal scrollbar removal */
+    html, body, .omkar-login-portal-wrapper, .ecom-auth-container, .ecom-hero-panel, .ecom-form-panel {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+    }
+
+    *::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    html, body {
+        height: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
         font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
         background-color: #f8fafc !important;
+    }
+
+    @media (max-width: 1023px) {
+        html, body {
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+        }
+    }
+
+    .omkar-login-portal-wrapper {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        overflow: hidden;
         margin: 0;
         padding: 0;
+    }
+
+    @media (max-width: 1023px) {
+        .omkar-login-portal-wrapper {
+            height: auto;
+            min-height: 100vh;
+            overflow: visible;
+        }
     }
 
     /* Main Container */
     .ecom-auth-container {
         display: flex;
-        min-height: 100vh;
-        width: 100%;
-        overflow-x: hidden;
+        height: 100vh;
+        max-height: 100vh;
+        width: 100vw;
+        overflow: hidden;
         background-color: #f8fafc;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media (max-width: 1023px) {
+        .ecom-auth-container {
+            height: auto;
+            min-height: 100vh;
+            overflow: visible;
+        }
     }
 
     /* LEFT HERO PANEL */
@@ -223,10 +272,11 @@
         flex-direction: column;
         justify-content: space-between;
         width: 50%;
-        min-height: 100vh;
-        padding: clamp(2rem, 3.5vh, 3.5rem) clamp(2rem, 3vw, 4rem);
+        height: 100vh;
+        max-height: 100vh;
+        padding: clamp(1.25rem, 2.5vh, 2.5rem) clamp(1.5rem, 2.5vw, 3.5rem);
         color: #ffffff;
-        overflow-y: auto;
+        overflow: hidden !important;
         background-color: #0b1120;
     }
 
@@ -333,26 +383,26 @@
 
     /* Hero Center */
     .ecom-hero-center {
-        margin: 2.5rem 0;
+        margin: clamp(0.6rem, 1.5vh, 1.25rem) 0;
     }
 
     .ecom-hero-kicker {
         display: inline-block;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.12em;
+        letter-spacing: 0.1em;
         color: #38bdf8;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.35rem;
     }
 
     .ecom-hero-headline {
         font-family: 'Outfit', sans-serif;
-        font-size: 2.75rem;
+        font-size: clamp(1.75rem, 2.3vw, 2.4rem);
         line-height: 1.15;
         font-weight: 800;
         letter-spacing: -0.02em;
-        margin: 0 0 1rem 0;
+        margin: 0 0 0.5rem 0;
         color: #ffffff;
     }
 
@@ -363,30 +413,30 @@
     }
 
     .ecom-hero-desc {
-        font-size: 1.05rem;
-        line-height: 1.6;
+        font-size: clamp(0.825rem, 0.95vw, 0.925rem);
+        line-height: 1.45;
         color: #cbd5e1;
-        max-width: 34rem;
-        margin: 0 0 2rem 0;
+        max-width: 32rem;
+        margin: 0 0 0.85rem 0;
     }
 
     /* Feature Cards */
     .ecom-features-grid {
         display: flex;
         flex-direction: column;
-        gap: 0.9rem;
-        max-width: 34rem;
-        margin-bottom: 2rem;
+        gap: 0.45rem;
+        max-width: 32rem;
+        margin-bottom: 0.85rem;
     }
 
     .ecom-feature-card {
         display: flex;
-        align-items: flex-start;
-        gap: 1rem;
-        padding: 0.9rem 1.15rem;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.5rem 0.85rem;
         background: rgba(255, 255, 255, 0.05);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 14px;
+        border-radius: 10px;
         backdrop-filter: blur(10px);
         transition: all 0.25s ease;
     }
@@ -401,9 +451,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 38px;
-        height: 38px;
-        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
         background: linear-gradient(135deg, rgba(2, 132, 199, 0.35) 0%, rgba(245, 158, 11, 0.25) 100%);
         border: 1px solid rgba(255, 255, 255, 0.15);
         flex-shrink: 0;
@@ -411,34 +461,34 @@
     }
 
     .ecom-svg-icon {
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
     }
 
     .ecom-feature-details h4 {
-        margin: 0 0 0.2rem 0;
-        font-size: 0.95rem;
+        margin: 0;
+        font-size: 0.85rem;
         font-weight: 700;
         color: #ffffff;
     }
 
     .ecom-feature-details p {
         margin: 0;
-        font-size: 0.825rem;
+        font-size: 0.75rem;
         color: #94a3b8;
-        line-height: 1.4;
+        line-height: 1.35;
     }
 
     /* Stats Row */
     .ecom-stats-row {
         display: flex;
         align-items: center;
-        gap: 1.5rem;
-        padding: 1.15rem 1.5rem;
+        gap: 1rem;
+        padding: 0.55rem 1rem;
         background: rgba(15, 23, 42, 0.7);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 14px;
-        max-width: 34rem;
+        border-radius: 10px;
+        max-width: 32rem;
     }
 
     .ecom-stat-item {
@@ -447,15 +497,15 @@
 
     .ecom-stat-val {
         font-family: 'Outfit', sans-serif;
-        font-size: 1.45rem;
+        font-size: 1.25rem;
         font-weight: 800;
         color: #38bdf8;
         line-height: 1;
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.15rem;
     }
 
     .ecom-stat-lbl {
-        font-size: 0.75rem;
+        font-size: 0.675rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.05em;
@@ -464,26 +514,26 @@
 
     .ecom-stat-divider {
         width: 1px;
-        height: 32px;
+        height: 24px;
         background: rgba(255, 255, 255, 0.15);
     }
 
     /* Hero Footer Quote */
     .ecom-hero-footer {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
-        padding-top: 1.5rem;
+        padding-top: 0.75rem;
     }
 
     .ecom-quote-box {
         display: flex;
         flex-direction: column;
-        gap: 0.4rem;
+        gap: 0.25rem;
     }
 
     .ecom-quote-text {
         font-style: italic;
-        font-size: 0.875rem;
-        line-height: 1.5;
+        font-size: 0.8rem;
+        line-height: 1.4;
         color: #cbd5e1;
         margin: 0;
     }
@@ -496,13 +546,13 @@
     }
 
     .ecom-author-title {
-        font-size: 0.8rem;
+        font-size: 0.775rem;
         font-weight: 600;
         color: #38bdf8;
     }
 
     .ecom-rating {
-        font-size: 0.775rem;
+        font-size: 0.725rem;
         font-weight: 700;
         color: #fbbf24;
         letter-spacing: 0.05em;
@@ -513,22 +563,33 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         flex: 1;
-        min-height: 100vh;
-        padding: 2rem 1.5rem;
+        width: 50%;
+        height: 100vh;
+        max-height: 100vh;
+        padding: clamp(0.75rem, 1.5vh, 1.75rem) clamp(1rem, 2vw, 2.5rem);
         background: radial-gradient(circle at 100% 0%, #f1f5f9 0%, #ffffff 70%);
-        overflow-y: auto;
+        overflow: hidden !important;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
     }
 
-    @media (min-width: 640px) {
-        .ecom-form-panel {
-            padding: 2.5rem 3rem;
-        }
+    .ecom-form-panel::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
     }
 
-    @media (min-width: 1280px) {
+    @media (max-width: 1023px) {
         .ecom-form-panel {
-            padding: 3rem 4.5rem;
+            width: 100% !important;
+            height: auto !important;
+            min-height: 100vh !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
         }
     }
 
@@ -539,7 +600,7 @@
         justify-content: space-between;
         width: 100%;
         max-width: 480px;
-        margin: 0 auto 1.5rem auto;
+        margin: 0 auto 0.75rem auto;
     }
 
     .ecom-back-store-btn {
@@ -601,8 +662,8 @@
         max-width: 480px;
         background: #ffffff;
         border: 1px solid #e2e8f0;
-        border-radius: 24px;
-        padding: 2.25rem 2rem;
+        border-radius: 20px;
+        padding: clamp(1.15rem, 2vh, 1.85rem) clamp(1.25rem, 2vw, 2.25rem);
         box-shadow: 
             0 10px 15px -3px rgba(0, 0, 0, 0.04),
             0 25px 35px -5px rgba(2, 132, 199, 0.06),
@@ -610,30 +671,24 @@
         transition: all 0.3s ease;
     }
 
-    @media (min-width: 640px) {
-        .ecom-auth-card {
-            padding: 2.75rem 2.5rem;
-        }
-    }
-
     /* Card Header & Brand Logo */
     .ecom-card-header {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .ecom-logo-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.75rem;
     }
 
     .ecom-logo-image {
         height: auto;
-        max-height: 58px;
+        max-height: 48px;
         width: auto;
-        max-width: 240px;
+        max-width: 220px;
         object-fit: contain;
         transition: transform 0.3s ease;
     }
@@ -646,11 +701,11 @@
         display: inline-flex;
         align-items: center;
         gap: 0.45rem;
-        padding: 0.3rem 0.85rem;
+        padding: 0.25rem 0.75rem;
         border-radius: 9999px;
         background: #f0f9ff;
         border: 1px solid #bae6fd;
-        margin-bottom: 0.85rem;
+        margin-bottom: 0.5rem;
     }
 
     .ecom-badge-dot {
@@ -661,7 +716,7 @@
     }
 
     .ecom-badge-text {
-        font-size: 0.725rem;
+        font-size: 0.7rem;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.06em;
@@ -670,31 +725,31 @@
 
     .ecom-main-title {
         font-family: 'Outfit', sans-serif;
-        font-size: 1.95rem;
+        font-size: 1.65rem;
         font-weight: 800;
         letter-spacing: -0.02em;
         color: #0f172a;
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 0.3rem 0;
         line-height: 1.2;
     }
 
     .ecom-main-subtitle {
-        font-size: 0.875rem;
-        line-height: 1.5;
+        font-size: 0.825rem;
+        line-height: 1.45;
         color: #64748b;
         margin: 0;
     }
 
     /* Form Body Enhancements */
     .ecom-form-body {
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.85rem;
     }
 
     /* Target Filament Form Elements inside our Card */
     .ecom-form-body form {
         display: flex;
         flex-direction: column;
-        gap: 1.15rem;
+        gap: 0.75rem;
     }
 
     /* Input Wrappers */
@@ -800,11 +855,11 @@
 
     /* Security Notice */
     .ecom-security-notice {
-        margin-top: 1.75rem;
-        padding: 0.85rem 1rem;
+        margin-top: 0.85rem;
+        padding: 0.5rem 0.85rem;
         background-color: #f8fafc;
         border: 1px solid #f1f5f9;
-        border-radius: 12px;
+        border-radius: 10px;
         text-align: center;
     }
 
@@ -813,10 +868,10 @@
         align-items: center;
         justify-content: center;
         gap: 0.45rem;
-        font-size: 0.775rem;
+        font-size: 0.75rem;
         font-weight: 700;
         color: #334155;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.15rem;
     }
 
     .ecom-lock-icon {
@@ -826,7 +881,7 @@
     }
 
     .ecom-security-sub {
-        font-size: 0.725rem;
+        font-size: 0.7rem;
         color: #94a3b8;
         margin: 0;
     }
@@ -834,11 +889,11 @@
     /* Footer */
     .ecom-form-footer {
         text-align: center;
-        margin-top: 1.5rem;
+        margin-top: 0.75rem;
     }
 
     .ecom-form-footer p {
-        font-size: 0.775rem;
+        font-size: 0.75rem;
         color: #94a3b8;
         margin: 0;
     }
