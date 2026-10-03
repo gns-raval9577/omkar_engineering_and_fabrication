@@ -28,9 +28,11 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->brandName('Omkar Engineering and Fabrication')
+            ->brandLogo(asset('template/img/logo-dark.png'))
+            ->brandLogoHeight('3.5rem')
             ->favicon(asset('template/img/favicon.png'))
-            ->login() 
-            ->registration()
+            ->login(\App\Filament\Admin\Pages\Auth\Login::class) 
+            ->registration(\App\Filament\Admin\Pages\Auth\Register::class)
             ->colors([
                 'primary' => Color::Amber,
             ])
