@@ -20,17 +20,17 @@ class ProductImagesResource extends Resource
 {
     protected static ?string $model = ProductImages::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedPhoto;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedSquare2Stack;
 
     protected static ?string $recordTitleAttribute = 'title';
 
-    protected static ?string $navigationLabel = 'Product Gallery';
+    protected static ?string $navigationLabel = 'Product Images';
 
     protected static ?string $modelLabel = 'Product Image';
 
-    protected static ?string $pluralModelLabel = 'Product Gallery';
+    protected static ?string $pluralModelLabel = 'Product Images';
 
-    protected static ?int $navigationSort = 2;
+    protected static ?int $navigationSort = 3;
 
     public static function form(Schema $schema): Schema
     {
