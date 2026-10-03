@@ -115,6 +115,31 @@
     :is(.dark) #omkar-spinner-card #omkar-spinnerText {
         color: #f8fafc !important;
     }
+    /* Global SVG size safety guarantees for custom cards and sections */
+    .fi-section-header .fi-icon,
+    .fi-section-header svg {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+        max-width: 1.5rem !important;
+        max-height: 1.5rem !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Multi-image upload grid: arrange previews in 3-4 columns instead of 1 vertical tower */
+    .filepond--root[data-style-panel-layout~="grid"] .filepond--item,
+    .fi-fo-file-upload .filepond--root .filepond--list .filepond--item {
+        margin: 0.35em !important;
+    }
+    @media (min-width: 640px) {
+        .filepond--root[data-style-panel-layout~="grid"] .filepond--item {
+            width: calc(33.333% - 0.7em) !important;
+        }
+    }
+    @media (min-width: 1024px) {
+        .filepond--root[data-style-panel-layout~="grid"] .filepond--item {
+            width: calc(25% - 0.7em) !important;
+        }
+    }
 </style>
 
 <script>
@@ -187,8 +212,8 @@
                 for (const call of calls) {
                     const method = call.method || '';
 
-                    // 1. Form submit actions (Create product, Edit product, Save)
-                    if (['create', 'save', 'submit', 'createAnother'].includes(method)) {
+                    // 1. Form submit actions (Create product, Edit product, Save, Delete image)
+                    if (['create', 'save', 'submit', 'createAnother', 'deleteExistingImage'].includes(method)) {
                         return true;
                     }
 
