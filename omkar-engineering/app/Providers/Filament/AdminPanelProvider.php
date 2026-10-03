@@ -10,6 +10,7 @@ use Filament\Pages\Dashboard;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
+use Filament\View\PanelsRenderHook;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
@@ -34,8 +35,13 @@ class AdminPanelProvider extends PanelProvider
             ->login(\App\Filament\Admin\Pages\Auth\Login::class) 
             ->registration(\App\Filament\Admin\Pages\Auth\Register::class)
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Sky,
+                'gray' => Color::Slate,
             ])
+            ->renderHook(
+                PanelsRenderHook::BODY_START,
+                fn () => view('filament.components.global-loader'),
+            )
             ->discoverResources(in: app_path('Filament/Admin/Resources'), for: 'App\Filament\Admin\Resources')
             ->discoverPages(in: app_path('Filament/Admin/Pages'), for: 'App\Filament\Admin\Pages')
             ->pages([

@@ -20,9 +20,17 @@ class ProductResource extends Resource
 {
     protected static ?string $model = Product::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedShoppingBag;
 
-protected static ?string $recordTitleAttribute = 'Products';
+    protected static ?string $recordTitleAttribute = 'title';
+
+    protected static ?string $navigationLabel = 'Products';
+
+    protected static ?string $modelLabel = 'Product';
+
+    protected static ?string $pluralModelLabel = 'Products';
+
+    protected static ?int $navigationSort = 1;
 
     public static function form(Schema $schema): Schema
     {
@@ -41,13 +49,6 @@ protected static ?string $recordTitleAttribute = 'Products';
         ];
     }
 
-    public static function getRelationManagers(): array
-    {
-        return [
-            // RelationManagers\ImagesRelationManager::class,
-        ];
-    }
-
     public static function getPages(): array
     {
         return [
@@ -55,5 +56,21 @@ protected static ?string $recordTitleAttribute = 'Products';
             'create' => CreateProduct::route('/create'),
             'edit' => EditProduct::route('/{record}/edit'),
         ];
+    }
+
+    public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()
+            ->withoutGlobalScopes([
+                SoftDeletingScope::class,
+            ]);
+    }
+
+    public static function getRecordRouteBindingEloquentQuery(): Builder
+    {
+        return parent::getRecordRouteBindingEloquentQuery()
+            ->withoutGlobalScopes([
+                SoftDeletingScope::class,
+            ]);
     }
 }
