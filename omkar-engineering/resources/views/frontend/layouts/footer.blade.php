@@ -65,10 +65,11 @@
                         <div class="widget clearfix usful-links">
                             <h3 class="widget-title">Quick Links</h3>
                             <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="{{ route('about') }}">About Us</a></li>
+                                <li><a href="{{ route('product') }}">Products</a></li>
+                                <li><a href="{{ route('project') }}">Projects</a></li>
+                                <li><a href="{{ route('certificates') }}">Company Certificates</a></li>
+                                <li><a href="{{ route('contact') }}">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>

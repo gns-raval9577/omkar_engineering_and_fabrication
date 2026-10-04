@@ -37,6 +37,10 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 })->name('contact');
 
+Route::get('/certificates', function () {
+    return view('frontend.certificates');
+})->name('certificates');
+
 // ---------
 
 

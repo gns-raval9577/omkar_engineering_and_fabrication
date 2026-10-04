@@ -115,7 +115,7 @@
                             data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Downloads <i
                                 class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="blog.html" class="dropdown-item"><span>Company Brochure</span></a></li>
+                            <li><a href="{{ route('certificates') }}" class="dropdown-item {{ request()->routeIs('certificates') ? 'active' : '' }}"><span>Company Certificates</span></a></li>
                             <li><a href="blog2.html" class="dropdown-item"><span>E-Card / Visiting Card</span></a></li>
                         </ul>
                     </li>
