@@ -6,7 +6,8 @@
 
     <!-- Header Banner -->
     <section class="banner-header banner-img-top section-padding valign bg-img bg-fixed" data-overlay-dark="5"
-        data-background="{{ asset('template/img/slider/1.jpg') }}">
+        data-background="{{ asset('template/img/certificates-banner.jpg') }}"
+        style="background-image: url('{{ asset('template/img/certificates-banner.jpg') }}');">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">

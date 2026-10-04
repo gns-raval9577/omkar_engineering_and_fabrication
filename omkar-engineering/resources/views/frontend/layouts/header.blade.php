@@ -76,12 +76,12 @@
                             <li><a href="project-page.html" class="dropdown-item"><span>Projects Page</span></a></li>
                         </ul>
                     </li> --}}
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
+                    <li class="nav-item dropdown"> <a class="nav-link" href="#" role="button"
                             data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Resources <i
                                 class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="image-gallery.html" class="dropdown-item"><span>Gallery</span></a></li>
-                            <li><a href="faqs.html" class="dropdown-item"><span>Certificate</span></a></li>
+                            <li><a href="{{ route('certificates') }}" class="dropdown-item {{ request()->routeIs('certificates') ? 'active' : '' }}"><span>Certificate</span></a></li>
                             <li><a href="team.html" class="dropdown-item"><span>Blog</span></a></li>
                             <li><a href="testimonials.html" class="dropdown-item"><span>Testimonial</span></a></li>
                             <li><a href="faqs.html" class="dropdown-item"><span>Faqs</span></a></li>
@@ -111,11 +111,11 @@
                         </ul>
                     </li> --}}
                     <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
+                    <li class="nav-item dropdown"> <a class="nav-link" href="#" role="button"
                             data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Downloads <i
                                 class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ route('certificates') }}" class="dropdown-item {{ request()->routeIs('certificates') ? 'active' : '' }}"><span>Company Certificates</span></a></li>
+                            <li><a href="blog.html" class="dropdown-item"><span>Company Brochure</span></a></li>
                             <li><a href="{{ route('download.visiting-card') }}" download="Omkar_Engineers_Visiting_Card.jpg" class="dropdown-item"><span>E-Card / Visiting Card <i class="fa fa-download ms-1" style="font-size: 11px;"></i></span></a></li>
                         </ul>
                     </li>
@@ -123,3 +123,36 @@
             </div>
         </div>
     </nav>
+
+    <!-- Header & Navigation Styling for Active Colors and Single Arrow -->
+    <style>
+        /* Hide bootstrap pseudo-element caret so only single arrow (fa-angle-down) displays */
+        .dropdown-toggle::after,
+        .navbar .dropdown-toggle::after,
+        .nav-link.dropdown-toggle::after,
+        .navbar .nav-link::after {
+            display: none !important;
+            content: none !important;
+        }
+
+        /* Dropdown active item - remove solid blue background block, use logo grey color so name is clearly readable */
+        .navbar .dropdown-menu .dropdown-item.active,
+        .navbar .dropdown-menu .dropdown-item:active {
+            background-color: #f4f5f7 !important;
+            color: #74757a !important;
+            font-weight: 600 !important;
+            border-radius: 4px;
+        }
+        .navbar .dropdown-menu .dropdown-item.active span,
+        .navbar .dropdown-menu .dropdown-item:active span {
+            color: #74757a !important;
+            font-weight: 600 !important;
+        }
+
+        /* Dropdown hover behavior */
+        .navbar .dropdown-menu .dropdown-item:hover,
+        .navbar .dropdown-menu .dropdown-item:hover span {
+            color: #008acf !important;
+            background-color: transparent !important;
+        }
+    </style>
