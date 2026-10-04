@@ -116,7 +116,7 @@
                                 class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{ route('certificates') }}" class="dropdown-item {{ request()->routeIs('certificates') ? 'active' : '' }}"><span>Company Certificates</span></a></li>
-                            <li><a href="blog2.html" class="dropdown-item"><span>E-Card / Visiting Card</span></a></li>
+                            <li><a href="{{ route('download.visiting-card') }}" download="Omkar_Engineers_Visiting_Card.jpg" class="dropdown-item"><span>E-Card / Visiting Card <i class="fa fa-download ms-1" style="font-size: 11px;"></i></span></a></li>
                         </ul>
                     </li>
                 </ul>

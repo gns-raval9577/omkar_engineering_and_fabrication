@@ -41,6 +41,16 @@ Route::get('/certificates', function () {
     return view('frontend.certificates');
 })->name('certificates');
 
+Route::get('/download-visiting-card', function () {
+    $filePath = public_path('storage/documents/Omkar_Engineers_Visiting_Card.jpg');
+    if (file_exists($filePath)) {
+        return response()->download($filePath, 'Omkar_Engineers_Visiting_Card.jpg', [
+            'Content-Type' => 'image/jpeg',
+        ]);
+    }
+    abort(404);
+})->name('download.visiting-card');
+
 // ---------
 
 
