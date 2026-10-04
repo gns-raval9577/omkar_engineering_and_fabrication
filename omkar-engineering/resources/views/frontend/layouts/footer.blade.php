@@ -12,7 +12,7 @@
                                     </div>
                                     <div class="footer-contact-link-content">
                                         <h6>Call us</h6>
-                                        <p>+1 203-333-4444</p>
+                                        <p><a href="tel:+918141133144" style="color: inherit;">+91 81411 33144</a></p>
                                     </div>
                                 </div>
                                 <div class="footer-contact-links-divider"></div>
@@ -22,7 +22,7 @@
                                     </div>
                                     <div class="footer-contact-link-content">
                                         <h6>Write to us</h6>
-                                        <p>info@construction.com</p>
+                                        <p><a href="mailto:omkarengineers.fab@gmail.com" style="color: inherit;">omkarengineers.fab@gmail.com</a></p>
                                     </div>
                                 </div>
                                 <div class="footer-contact-links-divider"></div>
@@ -51,7 +51,7 @@
                                 <p>Quisque imperdiet sapien porttito the bibendum sellentesque the commodo erat acar accumsa lobortis, enim diam the nesuen.</p>
                                 <div class="social-icons">
                                     <ul class="list-inline">
-                                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                                        <li><a href="https://wa.me/918141133144" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                         <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>

@@ -6,9 +6,9 @@
                     <!--Top Left-->
                     <div class="top-left">
                         <ul class="links clearfix">
-                            <li><a href="tel:+12033334444"><span class="fa fa-phone"></span>+1 203-333-4444</a></li>
-                            <li><a href="mailto:info@construction.com"><span
-                                        class="fa fa-envelope"></span>info@construction.com</a></li>
+                            <li><a href="tel:+918141133144"><span class="fa fa-phone"></span>+91 81411 33144</a></li>
+                            <li><a href="mailto:omkarengineers.fab@gmail.com"><span
+                                        class="fa fa-envelope"></span>omkarengineers.fab@gmail.com</a></li>
                             <li><a href="https://goo.gl/maps/zgdqkg4hFFR8pfDS8" target="_blank"><span
                                         class="fa fa-map-marker"></span>24 King St, SC 29401 USA</a></li>
                         </ul>
@@ -17,7 +17,7 @@
                     <div class="top-right clearfix">
                         <ul class="social-icon-one">
                             <li>
-                                <a href="#" class="fa fa-whatsapp"></a>
+                                <a href="https://wa.me/918141133144" target="_blank" class="fa fa-whatsapp"></a>
                             </li>
                             <li>
                                 <a href="#" class="fa fa-twitter"></a>

@@ -28,21 +28,21 @@
                         <div class="contact-link-icon"><span class="norc-phone"></span></div>
                         <div class="contact-link-content">
                             <div class="contact-link-title">Call us</div>
-                            <div class="contact-link-text">+1 203-333-4444</div>
+                            <div class="contact-link-text"><a href="tel:+918141133144" style="color: inherit;">+91 81411 33144</a></div>
                         </div>
                     </div>
                     <div class="contact-link">
-                        <div class="contact-link-icon"><span class="fa fa-fax"></span></div>
+                        <div class="contact-link-icon"><span class="fa fa-whatsapp"></span></div>
                         <div class="contact-link-content">
-                            <div class="contact-link-title">Fax Number</div>
-                            <div class="contact-link-text">+1 203-333-4400</div>
+                            <div class="contact-link-title">WhatsApp</div>
+                            <div class="contact-link-text"><a href="https://wa.me/918141133144" target="_blank" style="color: inherit;">+91 81411 33144</a></div>
                         </div>
                     </div>
                     <div class="contact-link">
                         <div class="contact-link-icon"><span class="norc-mail"></span></div>
                         <div class="contact-link-content">
                             <div class="contact-link-title">Send us an email</div>
-                            <div class="contact-link-text">info@construction.com</div>
+                            <div class="contact-link-text"><a href="mailto:omkarengineers.fab@gmail.com" style="color: inherit;">omkarengineers.fab@gmail.com</a></div>
                         </div>
                     </div>
                     <div class="contact-link">
