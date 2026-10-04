@@ -4040,9 +4040,9 @@ ol.number li:before {
     z-index: -1;
 }
 .map-color {	
-	-webkit-filter: grayscale(90%);
-	filter: grayscale(90%);
-	}
+	-webkit-filter: none;
+	filter: none;
+}
 
 /* ======= Button style ======= */
 /* primary */

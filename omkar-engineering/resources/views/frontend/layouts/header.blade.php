@@ -9,8 +9,8 @@
                             <li><a href="tel:+918141133144"><span class="fa fa-phone"></span>+91 81411 33144</a></li>
                             <li><a href="mailto:omkarengineers.fab@gmail.com"><span
                                         class="fa fa-envelope"></span>omkarengineers.fab@gmail.com</a></li>
-                            <li><a href="https://goo.gl/maps/zgdqkg4hFFR8pfDS8" target="_blank"><span
-                                        class="fa fa-map-marker"></span>24 King St, SC 29401 USA</a></li>
+                            <li><a href="https://www.google.com/maps/place/22%C2%B058'00.5%22N+72%C2%B037'52.3%22E/@22.9668007,72.6286049,17z/data=!3m1!4b1!4m4!3m3!8m2!3d22.9668007!4d72.6311798?hl=en" target="_blank" title="C/42, Maruti Industrial Estate, Opp. Kirti Tools, Phase-1, Vatva GIDC, Ahmedabad - 382445"><span
+                                        class="fa fa-map-marker"></span>Vatva GIDC, Ahmedabad - 382445</a></li>
                         </ul>
                     </div>
                     <!--Top Right-->

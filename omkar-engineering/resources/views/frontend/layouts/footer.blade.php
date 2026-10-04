@@ -32,7 +32,7 @@
                                     </div>
                                     <div class="footer-contact-link-content">
                                         <h6>Address</h6>
-                                        <p>24 King St, SC 29401 USA</p>
+                                        <p style="font-size: 14px; line-height: 1.45;"><a href="https://www.google.com/maps/place/22%C2%B058'00.5%22N+72%C2%B037'52.3%22E/@22.9668007,72.6286049,17z/data=!3m1!4b1!4m4!3m3!8m2!3d22.9668007!4d72.6311798?hl=en" target="_blank" style="color: inherit;">C/42, Maruti Ind. Estate, Opp. Kirti Tools,<br>Phase-1, Vatva GIDC, Ahmedabad - 382445</a></p>
                                     </div>
                                 </div>
                             </div>
