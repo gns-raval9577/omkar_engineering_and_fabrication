@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="about-img"> <img src="{{ asset('template/img/about.jpg')}}" alt="">
+                    <div class="about-img"> <img src="{{ asset('template/img/about.jpg')}}" alt="Omkar Engineering & Fabrication">
                         <div class="about-img-hotifer">
                             <p>Delivering durable and precision-based fabrication solutions with over 25 years of industry experience.</p>
                         </div>
