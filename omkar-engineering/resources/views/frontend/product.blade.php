@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'product')
+@section('title', 'Our Products | Omkar Engineering & Fabrication')
 
 @section('content')
 
@@ -10,142 +10,48 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <h6>What We Do</h6>
-                    <h1>Our <span>Services</span></h1>
+                    <h6>Precision Engineering</h6>
+                    <h1>Our <span>Products</span></h1>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Services 2 -->
+    <!-- Services 2 (Products) -->
     <section class="services2 center section-padding bg-gray">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="{{ asset('template/img/services/1.jpg') }}">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <div><i class="norc-new-construction"></i></div>
-                                    <h4>Project Planning</h4>
+                @forelse ($products as $product)
+                    @php
+                        $imgUrl = $product->image ? asset('storage/' . $product->image) : asset('template/img/services/1.jpg');
+                    @endphp
+                    <div class="col-md-4 mb-30">
+                        <div class="square-flip">
+                            <div class="square bg-img" data-background="{{ $imgUrl }}" style="background-image: url('{{ $imgUrl }}');">
+                                <div class="square-container d-flex align-items-end justify-content-end">
+                                    <div class="box-title">
+                                        <h4>{{ $product->title }}</h4>
+                                    </div>
                                 </div>
+                                <div class="flip-overlay"></div>
                             </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Project Planning</h4>
-                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
-                                    risus nesuen.</p>
-                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
+                            <div class="square2">
+                                <div class="square-container2">
+                                    <h4>{{ $product->title }}</h4>
+                                    <p>{{ $product->sort_description ?? \Illuminate\Support\Str::limit(strip_tags($product->description), 140) }}</p>
+                                    <a href="{{ route('product-details', ['slug' => $product->slug ?: $product->id]) }}" class="link-btn" tabindex="0">View product details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="{{ asset('template/img/services/2.jpg') }}">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <div><i class="norc-construction-sign"></i></div>
-                                    <h4>General Contracting</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>General Contracting</h4>
-                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
-                                    risus nesuen.</p>
-                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
-                            </div>
+                @empty
+                    <div class="col-md-12 text-center py-5">
+                        <div class="p-5" style="background: #fff; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                            <i class="norc-cogwheel" style="font-size: 40px; color: #008acf; display: block; margin-bottom: 15px;"></i>
+                            <h4>No Products Published Yet</h4>
+                            <p class="text-muted mb-0">Products added from the admin dashboard will automatically appear here.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="{{ asset('template/img/services/3.jpg') }}">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <div><i class="norc-factory"></i></div>
-                                    <h4>Industrial / Manufacturing</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Industrial / Manufacturing</h4>
-                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
-                                    risus nesuen.</p>
-                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="{{ asset('template/img/services/4.jpg') }}">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <div><i class="norc-radiation"></i></div>
-                                    <h4>Energy and Environment</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Energy and Environment</h4>
-                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
-                                    risus nesuen.</p>
-                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="{{ asset('template/img/services/2.jpg') }}">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <div><i class="norc-cogwheel"></i></div>
-                                    <h4>Const. Management</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Const. Management</h4>
-                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
-                                    risus nesuen.</p>
-                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="{{ asset('template/img/services/3.jpg') }}">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <div><i class="norc-pantone"></i></div>
-                                    <h4>Interior Design</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Interior Design</h4>
-                                <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt
-                                    risus nesuen.</p>
-                                <a href="{{ route('product-details') }}" class="link-btn" tabindex="0">View service</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforelse
             </div>
         </div>
     </section>
@@ -369,4 +275,57 @@
         </div>
     </section>
 
-@endsection()
+    <!-- Card text & layout safety styles -->
+    <style>
+        .services2 .square-flip {
+            min-height: 420px;
+        }
+
+        /* Front Card Title - Increased size & high visibility */
+        .services2 .square h4 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 0.8);
+            line-height: 1.3;
+            margin-bottom: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Subtle bottom gradient for crystal-clear title text */
+        .services2 .flip-overlay {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.25) 45%, transparent 75%) !important;
+            opacity: 1 !important;
+            pointer-events: none;
+        }
+
+        /* Back Card Title & Description Styling */
+        .services2 .square2 h4 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #161c24;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .services2 .square2 p {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+
+@endsection
+

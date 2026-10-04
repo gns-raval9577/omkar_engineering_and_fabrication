@@ -92,15 +92,16 @@ class ProductForm
                             ->directory('product-image')
                             ->image()
                             ->imageEditor()
+                            ->imageCropAspectRatio('3:4')
                             ->imageEditorAspectRatios([
-                                null,
-                                '16:9',
-                                '4:3',
+                                '3:4',
+                                '4:5',
                                 '1:1',
+                                null,
                             ])
                             ->maxSize(5120)
                             ->required()
-                            ->helperText('Formats: JPG, PNG, WebP up to 5MB. Click edit to crop.')
+                            ->helperText('Card box size: 3:4 ratio (~750×1000px). Cropping automatically matches the website product box.')
                             ->columnSpanFull()
                             ->validationMessages([
                                 'required' => 'Please upload a featured product image.',
@@ -110,9 +111,9 @@ class ProductForm
                             ->label('Publishing Guidelines')
                             ->content(new HtmlString('
                                 <div class="text-xs text-gray-500 dark:text-gray-400 space-y-1.5 pt-2">
-                                    <p>• High-resolution images (min. 800×600px) provide the best presentation.</p>
-                                    <p>• URL slug is automatically generated from the title for clean website URLs.</p>
-                                    <p>• Full specifications are optional and can be updated anytime.</p>
+                                    <p>• <strong>Box Fit:</strong> The product card box uses a 3:4 vertical ratio (~750×1000px or 600×800px). Uploading or cropping in 3:4 ensures the full product fills the box without zooming or edge cropping.</p>
+                                    <p>• <strong>Image Editor:</strong> Click the edit (crop) icon to frame your product into the 3:4 box.</p>
+                                    <p>• <strong>URL Slug:</strong> Automatically generated from the title for clean website URLs.</p>
                                 </div>
                             '))
                             ->columnSpanFull(),

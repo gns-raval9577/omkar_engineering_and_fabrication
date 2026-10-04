@@ -18,12 +18,29 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::get('/product', function () {
-    return view('frontend.product');
+    $products = \App\Models\Product::latest()->get();
+    return view('frontend.product', compact('products'));
 })->name('product');
 
-Route::get('/product-details', function () {
-    return view('frontend.productdetails');
+Route::get('/product-details/{slug?}', function ($slug = null) {
+    if (!$slug) {
+        $first = \App\Models\Product::latest()->first();
+        if ($first) {
+            return redirect()->route('product-details', ['slug' => $first->slug ?: $first->id]);
+        }
+        return redirect()->route('product');
+    }
+    $product = \App\Models\Product::with('images')
+        ->where('slug', $slug)
+        ->orWhere('id', $slug)
+        ->firstOrFail();
+    $otherProducts = \App\Models\Product::where('id', '!=', $product->id)->latest()->take(6)->get();
+    return view('frontend.productdetails', compact('product', 'otherProducts'));
 })->name('product-details');
+
+Route::get('/product/{slug}', function ($slug) {
+    return redirect()->route('product-details', ['slug' => $slug]);
+});
 
 Route::get('/project', function () {
     return view('frontend.project');
