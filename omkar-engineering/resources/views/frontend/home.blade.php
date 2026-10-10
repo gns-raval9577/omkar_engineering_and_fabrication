@@ -173,34 +173,34 @@
     </section>
     <!-- Process -->
     <section class="process">
-        <div class="section-padding bg-img bg-fixed section-padding" data-background="{{ asset('template/img/banner2.jpg')}}" data-overlay-dark="6">
+        <div class="section-padding bg-img bg-fixed section-padding" data-background="{{ asset('template/img/Faded-Industrial-Workshop-Process-Banner.png')}}" data-overlay-dark="6">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-3 mb-45 text-center">
                         <h5>How We Work</h5>
-                        <h2>Our Process</h2>
-                        <p>Suspendisse potenti sed laoen ultra magna in dignissim justo porta miss acurabitur luctus magna numsation elentesue the miss vitae moie.</p>
+                        <h2>Our Fabrication Process</h2>
+                        <p>From precision CAD design and material cutting to high-grade welding, structural assembly, and rigorous quality inspection — here is how we execute every engineering project.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3 padding">
-                        <div class="item text-center"> <img src="{{ asset('template/img/arrow1.png')}}" class="tobotm" alt=""> <span class="icon norc-paper"></span>
-                            <h6><span>01.</span>Planing</h6>
+                        <div class="item text-center"> <img src="{{ asset('template/img/arrow1.png')}}" class="tobotm" alt=""> <span class="icon norc-ruler-pencil"></span>
+                            <h6><span>01.</span>Design & CAD</h6>
                         </div>
                     </div>
                     <div class="col-md-3 padding">
-                        <div class="item text-center"> <img src="{{ asset('template/img/arrow1.png')}}" alt=""> <span class="icon norc-pen-tool-2"></span>
-                            <h6><span>02.</span>Design</h6>
+                        <div class="item text-center"> <img src="{{ asset('template/img/arrow1.png')}}" alt=""> <span class="icon norc-cogwheel"></span>
+                            <h6><span>02.</span>Cutting & Machining</h6>
                         </div>
                     </div>
                     <div class="col-md-3 padding">
-                        <div class="item text-center"> <img src="{{ asset('template/img/arrow1.png')}}" class="tobotm" alt=""> <span class="icon norc-new-construction"></span>
-                            <h6><span>03.</span>Construct</h6>
+                        <div class="item text-center"> <img src="{{ asset('template/img/arrow1.png')}}" class="tobotm" alt=""> <span class="icon norc-factory"></span>
+                            <h6><span>03.</span>Fabrication & Welding</h6>
                         </div>
                     </div>
                     <div class="col-md-3 padding">
-                        <div class="item text-center"> <span class="icon norc-trophy"></span>
-                            <h6><span>04.</span>Finishing</h6>
+                        <div class="item text-center"> <span class="icon norc-d-check"></span>
+                            <h6><span>04.</span>Quality & Finishing</h6>
                         </div>
                     </div>
                 </div>
@@ -275,43 +275,43 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="single-facility"> <span class="norc-construction-sign"></span>
-                        <h5>Safety</h5>
-                        <p>Safety will always come first as we strive for accident-free projects. Fusce tidunt nis ace park norttito amet space.</p>
+                        <h5>Safety First</h5>
+                        <p>We maintain zero-compromise safety protocols and follow rigorous workplace standards across all industrial fabrication and on-site installations.</p>
                         <div class="facility-shape"> <span class="norc-construction-sign"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="single-facility"> <span class="norc-bulb-63"></span>
-                        <h5>Innovation</h5>
-                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a menas vitae.</p>
-                        <div class="facility-shape"> <span class="norc-bulb-63"></span> </div>
+                    <div class="single-facility"> <span class="norc-cogwheel"></span>
+                        <h5>Precision Engineering</h5>
+                        <p>Delivering high dimensional accuracy, meticulous detailing, and durable engineering through modern machinery and skilled craftsmanship.</p>
+                        <div class="facility-shape"> <span class="norc-cogwheel"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility"> <span class="norc-paper-diploma"></span>
-                        <h5>Quality</h5>
-                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a menas vitae.</p>
+                        <h5>Quality Assurance</h5>
+                        <p>Every fabrication component, weld joint, and structure undergoes strict quality inspection to guarantee lasting strength and industrial compliance.</p>
                         <div class="facility-shape"> <span class="norc-paper-diploma"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility"> <span class="norc-chess-knight"></span>
-                        <h5>Integrity</h5>
-                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a menas vitae.</p>
+                        <h5>Integrity & Trust</h5>
+                        <p>We build lasting partnerships through transparent communication, honest pricing, and an unwavering commitment to our project commitments.</p>
                         <div class="facility-shape"> <span class="norc-chess-knight"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility"> <span class="norc-strategy"></span>
-                        <h5>Strategy</h5>
-                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a menas vitae.</p>
+                        <h5>Timely Execution</h5>
+                        <p>Optimized manufacturing schedules and dedicated project management ensure reliable, on-time project completion without compromising on quality.</p>
                         <div class="facility-shape"> <span class="norc-strategy"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility"> <span class="norc-flag-points-32"></span>
-                        <h5>Inclusion</h5>
-                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a menas vitae.</p>
+                        <h5>Customer Focus</h5>
+                        <p>We engineer custom metal and structural solutions tailored precisely to meet each client's unique technical specifications and operational needs.</p>
                         <div class="facility-shape"> <span class="norc-flag-points-32"></span> </div>
                     </div>
                 </div>
@@ -374,21 +374,21 @@
     </section>
     <!-- Numbers -->
     <section class="numbers">
-        <div class="section-padding bg-img bg-fixed section-padding" data-background="{{ asset('template/img/banner2.jpg')}}" data-overlay-dark="6">
+        <div class="section-padding bg-img bg-fixed section-padding" data-background="{{ asset('template/img/fabrication-numbers-banner.jpg')}}" data-overlay-dark="6">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="item text-center"> <span class="icon">
-                                <i class="front norc-design"></i>
-                                <i class="back norc-design"></i>
+                                <i class="front norc-factory"></i>
+                                <i class="back norc-factory"></i>
                             </span>
                             <h3 class="count">675</h3>
-                            <h6><span>01.</span> Projects Design</h6>
+                            <h6><span>01.</span> Fabrication Projects</h6>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="item text-center"> <span class="icon">
-                                <i class="font norc-b-meeting"></i>
+                                <i class="front norc-b-meeting"></i>
                                 <i class="back norc-b-meeting"></i>
                             </span>
                             <h3 class="count">450</h3>
@@ -397,8 +397,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="item text-center"> <span class="icon">
-                                <i class="front norc-paper-diploma"></i>
-                                <i class="back norc-paper-diploma"></i>
+                                <i class="front norc-trophy"></i>
+                                <i class="back norc-trophy"></i>
                             </span>
                             <h3 class="count">550</h3>
                             <h6><span>03.</span> Completed Projects</h6>
@@ -408,134 +408,9 @@
             </div>
         </div>
     </section>
-    <!-- News -->
-    <section class="news section-padding bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle"><span>Latest News</span></div>
-                    <div class="section-title">Our <span>Blog</span></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('template/img/news/5.jpg')}}" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>10</i> </a>
-                                </div>
-                            </div>
-                            <div class="con">
-                                <h5><a href="post.html">Construction Delivery Methods Training</a></h5>
-                                <div class="divider"></div>
-                                <div class="news-info">
-                                    <div class="split-content news-info-left">
-                                        <div class="news-icon-wrapper"> <i class="norc-new-construction"></i> </div>
-                                        <div class="card-news-date-text">Construction</div>
-                                    </div>
-                                    <div class="split-content news-info-right"> <a href="#" class="link-btn" tabindex="0">Read more</a> </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('template/img/news/3.jpg')}}" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>06</i> </a>
-                                </div>
-                            </div>
-                            <div class="con">
-                                <h5><a href="post.html">Modern Glass Building in Construction</a></h5>
-                                <div class="divider"></div>
-                                <div class="news-info">
-                                    <div class="split-content news-info-left">
-                                        <div class="news-icon-wrapper"> <i class="norc-pantone"></i> </div>
-                                        <div class="card-news-date-text">Interior</div>
-                                    </div>
-                                    <div class="split-content news-info-right"> <a href="#" class="link-btn" tabindex="0">Read more</a> </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('template/img/news/4.jpg')}}" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>08</i> </a>
-                                </div>
-                            </div>
-                            <div class="con">
-                                <h5><a href="post.html">Factory renovation architecture works</a></h5>
-                                <div class="divider"></div>
-                                <div class="news-info">
-                                    <div class="split-content news-info-left">
-                                        <div class="news-icon-wrapper"> <i class="norc-factory"></i> </div>
-                                        <div class="card-news-date-text">Industrial</div>
-                                    </div>
-                                    <div class="split-content news-info-right"> <a href="#" class="link-btn" tabindex="0">Read more</a> </div>
-                                </div>
-                            </div>
-                        </div><div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('template/img/news/2.jpg')}}" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>04</i> </a>
-                                </div>
-                            </div>
-                            <div class="con">
-                                <h5><a href="post.html">Construction Site Security Guide</a></h5>
-                                <div class="divider"></div>
-                                <div class="news-info">
-                                    <div class="split-content news-info-left">
-                                        <div class="news-icon-wrapper"> <i class="norc-new-construction"></i> </div>
-                                        <div class="card-news-date-text">Construction</div>
-                                    </div>
-                                    <div class="split-content news-info-right"> <a href="#" class="link-btn" tabindex="0">Read more</a> </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('template/img/news/1.jpg')}}" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>02</i> </a>
-                                </div>
-                            </div>
-                            <div class="con">
-                                <h5><a href="post.html">Airport Runway Construction Process</a></h5>
-                                <div class="divider"></div>
-                                <div class="news-info">
-                                    <div class="split-content news-info-left">
-                                        <div class="news-icon-wrapper"> <i class="norc-factory"></i> </div>
-                                        <div class="card-news-date-text">Industrial</div>
-                                    </div>
-                                    <div class="split-content news-info-right"> <a href="#" class="link-btn" tabindex="0">Read more</a> </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('template/img/news/6.jpg')}}" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>12</i> </a>
-                                </div>
-                            </div>
-                            <div class="con">
-                                <h5><a href="post.html">Exterior House Colors Combinations</a></h5>
-                                <div class="divider"></div>
-                                <div class="news-info">
-                                    <div class="split-content news-info-left">
-                                        <div class="news-icon-wrapper"> <i class="norc-pantone"></i> </div>
-                                        <div class="card-news-date-text">Interior</div>
-                                    </div>
-                                    <div class="split-content news-info-right"> <a href="#" class="link-btn" tabindex="0">Read more</a> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Video & Testiominals -->
     <section class="testimonials">
-        <div class="background bg-img bg-fixed section-padding pb-0" data-background="{{ asset('template/img/banner.jpg')}}" data-overlay-dark="4">
+        <div class="background bg-img bg-fixed section-padding pb-0" data-background="{{ asset('template/img/fabrication-testimonials-banner.jpg')}}" data-overlay-dark="4">
             <div class="container">
                 <div class="row">
                     <!-- Video -->
@@ -553,9 +428,9 @@
                                     </span> </a>
                             </div>
                             <div class="cont mt-30 mb-30">
-                                <h6>Promo Video</h6>
-                                <h4>Video About Company</h4>
-                                <p>Video showing our 25 years of business experience.</p>
+                                <h6>Fabrication Tour</h6>
+                                <h4>Engineering & Fabrication in Action</h4>
+                                <p>Discover our advanced fabrication facilities, heavy machinery, and precision craftsmanship delivering durable industrial solutions.</p>
                             </div>
                         </div>
                     </div>
@@ -563,38 +438,38 @@
                     <div class="col-md-5 offset-md-1">
                         <div class="testimonials-box">
                             <div class="head-box">
-                                <h6>What said about us</h6>
+                                <h6>What Our Clients Say</h6>
                                 <h4>Customer Reviews</h4>
                             </div>
                             <div class="owl-carousel owl-theme">
                                 <div class="item"> <span class="quote"><img src="{{ asset('template/img/quot.png')}}" alt=""></span>
-                                    <p class="v-border">Company kaya nisl ullamcorper the duru metu enna lophare mavna busnini viventa the ornare ipsuma. Curabitur magna pentesue the miss tenis vitae.</p>
+                                    <p class="v-border">Omkar Engineering delivered outstanding structural steel fabrication for our industrial facility. Their precision engineering, weld quality, and on-schedule execution exceeded our expectations.</p>
                                     <div class="info">
                                         <div class="author-img"> <img src="{{ asset('template/img/team/comment2.jpg')}}" alt=""> </div>
                                         <div class="cont">
-                                            <h6>Jason Brown</h6> <span>Hollywood Hills, CA</span>
+                                            <h6>Rajesh Patel</h6> <span>Industrial Plant Director, Ahmedabad</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item"> <span class="quote">
-                                        <img src="img/quot.png" alt="">
+                                        <img src="{{ asset('template/img/quot.png')}}" alt="">
                                     </span>
-                                    <p class="v-border">Company kaya nisl ullamcorper the duru metu enna lophare mavna busnini viventa the ornare ipsuma. Curabitur magna pentesue the miss tenis vitae.</p>
+                                    <p class="v-border">We partnered with Omkar for custom machinery parts and industrial shed fabrication. Their technical expertise, CAD accuracy, and material strength are best in class.</p>
                                     <div class="info">
                                         <div class="author-img"> <img src="{{ asset('template/img/team/comment3.jpg')}}" alt=""> </div>
                                         <div class="cont">
-                                            <h6>Emily White</h6> <span>Los Angeles, CA</span>
+                                            <h6>Suresh Sharma</h6> <span>Project Head, Vadodara</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item"> <span class="quote">
-                                        <img src="img/quot.png" alt="">
+                                        <img src="{{ asset('template/img/quot.png')}}" alt="">
                                     </span>
-                                    <p class="v-border">Company kaya nisl ullamcorper the duru metu enna lophare mavna busnini viventa the ornare ipsuma. Curabitur magna pentesue the miss tenis vitae.</p>
+                                    <p class="v-border">Highly dependable fabrication partner. Their attention to detail, robust safety compliance, and finishing quality on our heavy engineering projects have been truly commendable.</p>
                                     <div class="info">
                                         <div class="author-img"> <img src="{{ asset('template/img/team/comment.jpg')}}" alt=""> </div>
                                         <div class="cont">
-                                            <h6>Enrico Smith</h6> <span>Malibu Beach, CA</span>
+                                            <h6>Mahesh Shah</h6> <span>Operations Manager, Sanand GIDC</span>
                                         </div>
                                     </div>
                                 </div>

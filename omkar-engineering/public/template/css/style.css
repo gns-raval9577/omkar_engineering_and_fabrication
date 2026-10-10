@@ -3459,13 +3459,8 @@ button.mfp-arrow {
   position: relative;
 }
 .process .item:hover .icon {
-<<<<<<< Updated upstream
   background: #fff !important;
-  color: #ed5521;
-=======
-    background: #fff !important;
-    color: #008acf;
->>>>>>> Stashed changes
+  color: #008acf;
 }
 .process .item img {
   position: absolute;

@@ -58,21 +58,21 @@
     <!-- Numbers -->
     <section class="numbers">
         <div class="section-padding bg-img bg-fixed section-padding"
-            data-background="{{ asset('template/img/banner2.jpg') }}" data-overlay-dark="6">
+            data-background="{{ asset('template/img/fabrication-numbers-banner.jpg') }}" data-overlay-dark="6">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="item text-center"> <span class="icon">
-                                <i class="front norc-design"></i>
-                                <i class="back norc-design"></i>
+                                <i class="front norc-factory"></i>
+                                <i class="back norc-factory"></i>
                             </span>
                             <h3 class="count">675</h3>
-                            <h6><span>01.</span> Projects Design</h6>
+                            <h6><span>01.</span> Fabrication Projects</h6>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="item text-center"> <span class="icon">
-                                <i class="font norc-b-meeting"></i>
+                                <i class="front norc-b-meeting"></i>
                                 <i class="back norc-b-meeting"></i>
                             </span>
                             <h3 class="count">450</h3>
@@ -81,8 +81,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="item text-center"> <span class="icon">
-                                <i class="front norc-paper-diploma"></i>
-                                <i class="back norc-paper-diploma"></i>
+                                <i class="front norc-trophy"></i>
+                                <i class="back norc-trophy"></i>
                             </span>
                             <h3 class="count">550</h3>
                             <h6><span>03.</span> Completed Projects</h6>
@@ -105,54 +105,48 @@
                 <div class="col-md-4">
                     <div class="single-facility">
                         <span class="norc-construction-sign"></span>
-                        <h5>Safety</h5>
-                        <p>Safety will always come first as we strive for accident-free projects. Fusce tincidunt nis ace
-                            park norttito amet space.</p>
+                        <h5>Safety First</h5>
+                        <p>We maintain zero-compromise safety protocols and follow rigorous workplace standards across all industrial fabrication and on-site installations.</p>
                         <div class="facility-shape"> <span class="norc-construction-sign"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility">
-                        <span class="norc-bulb-63"></span>
-                        <h5>Innovation</h5>
-                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a
-                            menas vitae.</p>
-                        <div class="facility-shape"> <span class="norc-bulb-63"></span> </div>
+                        <span class="norc-cogwheel"></span>
+                        <h5>Precision Engineering</h5>
+                        <p>Delivering high dimensional accuracy, meticulous detailing, and durable engineering through modern machinery and skilled craftsmanship.</p>
+                        <div class="facility-shape"> <span class="norc-cogwheel"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility">
                         <span class="norc-paper-diploma"></span>
-                        <h5>Quality</h5>
-                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a
-                            menas vitae.</p>
+                        <h5>Quality Assurance</h5>
+                        <p>Every fabrication component, weld joint, and structure undergoes strict quality inspection to guarantee lasting strength and industrial compliance.</p>
                         <div class="facility-shape"> <span class="norc-paper-diploma"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility">
                         <span class="norc-chess-knight"></span>
-                        <h5>Integrity</h5>
-                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a
-                            menas vitae.</p>
+                        <h5>Integrity & Trust</h5>
+                        <p>We build lasting partnerships through transparent communication, honest pricing, and an unwavering commitment to our project commitments.</p>
                         <div class="facility-shape"> <span class="norc-chess-knight"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility">
                         <span class="norc-strategy"></span>
-                        <h5>Strategy</h5>
-                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a
-                            menas vitae.</p>
+                        <h5>Timely Execution</h5>
+                        <p>Optimized manufacturing schedules and dedicated project management ensure reliable, on-time project completion without compromising on quality.</p>
                         <div class="facility-shape"> <span class="norc-strategy"></span> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility">
                         <span class="norc-flag-points-32"></span>
-                        <h5>Inclusion</h5>
-                        <p>Nulla quis effi vivento acus suvina sene in atue eduis euro vesatien arcum the onte nisl auctor a
-                            menas vitae.</p>
+                        <h5>Customer Focus</h5>
+                        <p>We engineer custom metal and structural solutions tailored precisely to meet each client's unique technical specifications and operational needs.</p>
                         <div class="facility-shape"> <span class="norc-flag-points-32"></span> </div>
                     </div>
                 </div>
@@ -162,7 +156,7 @@
     <!-- Video & Testiominals -->
     <section class="testimonials">
         <div class="background bg-img bg-fixed section-padding pb-0"
-            data-background="{{ asset('template/img/banner.jpg') }}" data-overlay-dark="4">
+            data-background="{{ asset('template/img/fabrication-testimonials-banner.jpg') }}" data-overlay-dark="4">
             <div class="container">
                 <div class="row">
                     <!-- Video -->
@@ -182,9 +176,9 @@
                                     </span> </a>
                             </div>
                             <div class="cont mt-30 mb-30">
-                                <h6>Promo Video</h6>
-                                <h4>Video About Company</h4>
-                                <p>Video showing our 25 years of business experience.</p>
+                                <h6>Fabrication Tour</h6>
+                                <h4>Engineering & Fabrication in Action</h4>
+                                <p>Discover our advanced fabrication facilities, heavy machinery, and precision craftsmanship delivering durable industrial solutions.</p>
                             </div>
                         </div>
                     </div>
@@ -192,48 +186,45 @@
                     <div class="col-md-5 offset-md-1">
                         <div class="testimonials-box">
                             <div class="head-box">
-                                <h6>What said about us</h6>
+                                <h6>What Our Clients Say</h6>
                                 <h4>Customer Reviews</h4>
                             </div>
                             <div class="owl-carousel owl-theme">
                                 <div class="item"> <span class="quote"><img
                                             src="{{ asset('template/img/quot.png') }}" alt=""></span>
-                                    <p class="v-border">Company kaya nisl ullamcorper the duru metu enna lophare mavna
-                                        busnini viventa the ornare ipsuma. Curabitur magna pentesue the miss tenis vitae.
+                                    <p class="v-border">Omkar Engineering delivered outstanding structural steel fabrication for our industrial facility. Their precision engineering, weld quality, and on-schedule execution exceeded our expectations.
                                     </p>
                                     <div class="info">
                                         <div class="author-img"> <img src="{{ asset('template/img/team/comment2.jpg') }}"
                                                 alt=""> </div>
                                         <div class="cont">
-                                            <h6>Jason Brown</h6> <span>Hollywood Hills, CA</span>
+                                            <h6>Rajesh Patel</h6> <span>Industrial Plant Director, Ahmedabad</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item"> <span class="quote">
                                         <img src="{{ asset('template/img/quot.png') }}" alt="">
                                     </span>
-                                    <p class="v-border">Company kaya nisl ullamcorper the duru metu enna lophare mavna
-                                        busnini viventa the ornare ipsuma. Curabitur magna pentesue the miss tenis vitae.
+                                    <p class="v-border">We partnered with Omkar for custom machinery parts and industrial shed fabrication. Their technical expertise, CAD accuracy, and material strength are best in class.
                                     </p>
                                     <div class="info">
                                         <div class="author-img"> <img src="{{ asset('template/img/team/comment3.jpg') }}"
                                                 alt=""> </div>
                                         <div class="cont">
-                                            <h6>Emily White</h6> <span>Los Angeles, CA</span>
+                                            <h6>Suresh Sharma</h6> <span>Project Head, Vadodara</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item"> <span class="quote">
                                         <img src="{{ asset('template/img/quot.png') }}" alt="">
                                     </span>
-                                    <p class="v-border">Company kaya nisl ullamcorper the duru metu enna lophare mavna
-                                        busnini viventa the ornare ipsuma. Curabitur magna pentesue the miss tenis vitae.
+                                    <p class="v-border">Highly dependable fabrication partner. Their attention to detail, robust safety compliance, and finishing quality on our heavy engineering projects have been truly commendable.
                                     </p>
                                     <div class="info">
                                         <div class="author-img"> <img src="{{ asset('template/img/team/comment.jpg') }}"
                                                 alt=""> </div>
                                         <div class="cont">
-                                            <h6>Enrico Smith</h6> <span>Malibu Beach, CA</span>
+                                            <h6>Mahesh Shah</h6> <span>Operations Manager, Sanand GIDC</span>
                                         </div>
                                     </div>
                                 </div>
