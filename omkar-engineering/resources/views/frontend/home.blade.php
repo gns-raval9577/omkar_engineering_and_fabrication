@@ -15,7 +15,7 @@
                             <div class="col-md-7">
                                 <h4>Trusted Fabrication Experts</h4>
                                 <h1>Omkar Engineering & Fabrication</h1>
-                                <p>We provide high-quality engineering and fabrication services including metal fabrication, industrial structures, and custom machinery solutions with precision and durability.</p> <a href="projects.html" class="button-primary">Our Projects</a> <a href="services.html" class="button-tersiyer">Our Services</a>
+                                <p>We provide high-quality engineering and fabrication services including metal fabrication, industrial structures, and custom machinery solutions with precision and durability.</p> <a href="{{ route('project') }}" class="button-primary">Our Projects</a> <a href="#services" class="button-tersiyer">Our Services</a>
                             </div>
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                             <div class="col-md-7">
                                 <h4>Industrial & Custom Solutions</h4>
                                 <h1>Precision Engineering Services</h1>
-                                <p>Specializing in structural fabrication, welding works, shed fabrication, and industrial project execution tailored to client requirements.</p> <a href="projects.html" class="button-primary">Our Projects</a> <a href="services.html" class="button-tersiyer">Our Services</a>
+                                <p>Specializing in structural fabrication, welding works, shed fabrication, and industrial project execution tailored to client requirements.</p> <a href="{{ route('project') }}" class="button-primary">Our Projects</a> <a href="#services" class="button-tersiyer">Our Services</a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                             <div class="col-md-7">
                                 <h4>25+ Years Experience</h4>
                                 <h1>Your Trusted Fabrication Partner</h1>
-                                <p>Omkar Engineering delivers reliable fabrication services with expert craftsmanship, modern tools, and commitment to quality and safety.</p> <a href="projects.html" class="button-primary">Our Projects</a> <a href="services.html" class="button-tersiyer">Our Services</a>
+                                <p>Omkar Engineering delivers reliable fabrication services with expert craftsmanship, modern tools, and commitment to quality and safety.</p> <a href="{{ route('project') }}" class="button-primary">Our Projects</a> <a href="#services" class="button-tersiyer">Our Services</a>
                             </div>
                         </div>
                     </div>
@@ -96,8 +96,127 @@
             </div>
         </div>
     </section>
+    <style>
+        /* Fixed uniform equal height for all service cards */
+        .services .owl-stage {
+            display: -webkit-box !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+        }
+        .services .owl-item {
+            display: -webkit-box !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+            float: none !important;
+            height: auto !important;
+        }
+        .services .owl-item .item {
+            display: -webkit-box !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -webkit-box-orient: vertical !important;
+            -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+            flex-direction: column !important;
+            width: 100% !important;
+            height: 100% !important;
+            margin-bottom: 30px !important;
+            background: #fff;
+        }
+        .services .item .service-img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+        .services .item .service-img .img {
+            width: 100%;
+            height: 240px !important;
+            aspect-ratio: 1100 / 755;
+            overflow: hidden;
+            position: relative;
+            background: #e5e7eb;
+            border-radius: 4px 4px 0 0;
+        }
+        .services .item .service-img .img img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+        .services .item .cont {
+            display: -webkit-box !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -webkit-box-orient: vertical !important;
+            -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+            flex-direction: column !important;
+            -webkit-box-pack: justify !important;
+            -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+            -webkit-box-flex: 1 !important;
+            -ms-flex: 1 1 auto !important;
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            padding: 30px 25px 22px 25px !important;
+            background: #fff;
+            box-sizing: border-box;
+        }
+        .services .item .cont .service-title {
+            font-size: 20px !important;
+            line-height: 1.35 !important;
+            min-height: 54px !important;
+            max-height: 54px !important;
+            margin-bottom: 12px !important;
+            display: -webkit-box !important;
+            -webkit-line-clamp: 2 !important;
+            -webkit-box-orient: vertical !important;
+            overflow: hidden !important;
+        }
+        .services .item .cont .service-desc {
+            font-size: 14px !important;
+            line-height: 1.6 !important;
+            min-height: 70px !important;
+            max-height: 70px !important;
+            margin-bottom: 0 !important;
+            color: #64748b !important;
+            display: -webkit-box !important;
+            -webkit-line-clamp: 3 !important;
+            -webkit-box-orient: vertical !important;
+            overflow: hidden !important;
+        }
+        .services .item .cont .service-action-bar {
+            margin-top: auto !important;
+            padding-top: 15px !important;
+            border-top: 1px dashed #e2e8f0 !important;
+            display: -webkit-box !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -webkit-box-align: center !important;
+            -ms-flex-align: center !important;
+            align-items: center !important;
+            -webkit-box-pack: justify !important;
+            -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+        }
+        /* Decrease gap between About and Services sections */
+        .about.section-padding {
+            padding-bottom: 50px !important;
+        }
+        .services.section-padding {
+            padding-top: 60px !important;
+        }
+        /* Decrease gap between Values and Team sections */
+        .values.section-padding {
+            padding-bottom: 50px !important;
+        }
+        .team.section-padding {
+            padding-top: 60px !important;
+        }
+    </style>
+
     <!-- Services -->
-    <section class="services center section-padding bg-gray">
+    <section id="services" class="services center section-padding bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -107,66 +226,87 @@
             </div>
             <div class="row">
                 <div class="col-md-12 owl-carousel owl-theme">
-                    <div class="item mb-30">
-                        <div class="service-img">
-                            <div class="img"> <img src="{{ asset('template/img/services/1.jpg')}}" alt=""> </div>
+                    @forelse ($services as $index => $service)
+                        @php
+                            $icons = [
+                                'norc-factory',
+                                'norc-cogwheel',
+                                'norc-new-construction',
+                                'norc-construction-sign',
+                                'norc-radiation',
+                                'norc-pantone',
+                            ];
+                            $icon = $icons[$index % count($icons)];
+                            $fallbackImg = asset('template/img/services/' . (($index % 6) + 1) . '.jpg');
+                            $imgUrl = $service->image ? asset('storage/' . $service->image) : $fallbackImg;
+                        @endphp
+                        <div class="item mb-30">
+                            <div class="service-img">
+                                <div class="img">
+                                    <img src="{{ $imgUrl }}" 
+                                         alt="{{ $service->title }}" 
+                                         onerror="this.src='{{ $fallbackImg }}'">
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <div>
+                                    <div class="service-icon"> <i class="{{ $icon }}"></i> </div>
+                                    <h5 class="service-title"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#serviceModal{{ $service->id }}">{{ $service->title }}</a></h5>
+                                    <p class="service-desc">{{ \Illuminate\Support\Str::limit($service->sort_description ?? strip_tags($service->description), 110) }}</p>
+                                </div>
+                                <div class="service-action-bar">
+                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#serviceModal{{ $service->id }}" class="link-btn" tabindex="0">View Details</a>
+                                    <a href="{{ route('contact') }}?service={{ urlencode($service->title) }}" class="link-btn" style="color: #008acf !important; font-weight: 600;" tabindex="0">Inquire Now &rarr;</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cont">
-                            <div class="service-icon"> <i class="norc-new-construction"></i> </div>
-                            <h5><a href="services-page.html">Project Planning</a></h5>
-                            <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt risus nesuen.</p> <a href="services-page.html" class="link-btn" tabindex="0">View service</a>
+                    @empty
+                        <div class="item mb-30">
+                            <div class="service-img">
+                                <div class="img"> <img src="{{ asset('template/img/services/1.jpg')}}" alt="Project Planning"> </div>
+                            </div>
+                            <div class="cont">
+                                <div>
+                                    <div class="service-icon"> <i class="norc-new-construction"></i> </div>
+                                    <h5 class="service-title"><a href="{{ route('contact') }}">Project Planning</a></h5>
+                                    <p class="service-desc">Comprehensive engineering planning, CAD structural modeling, and project consulting.</p>
+                                </div>
+                                <div class="service-action-bar">
+                                    <a href="{{ route('contact') }}?service={{ urlencode('Project Planning') }}" class="link-btn" tabindex="0">Inquire Now</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mb-30">
-                        <div class="service-img">
-                            <div class="img"> <img src="{{ asset('template/img/services/2.jpg')}}" alt=""> </div>
+                        <div class="item mb-30">
+                            <div class="service-img">
+                                <div class="img"> <img src="{{ asset('template/img/services/2.jpg')}}" alt="General Contracting"> </div>
+                            </div>
+                            <div class="cont">
+                                <div>
+                                    <div class="service-icon"> <i class="norc-construction-sign"></i> </div>
+                                    <h5 class="service-title"><a href="{{ route('contact') }}">General Contracting</a></h5>
+                                    <p class="service-desc">End-to-end industrial structural fabrication, shed erection, and site assembly execution.</p>
+                                </div>
+                                <div class="service-action-bar">
+                                    <a href="{{ route('contact') }}?service={{ urlencode('General Contracting') }}" class="link-btn" tabindex="0">Inquire Now</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cont">
-                            <div class="service-icon"> <i class="norc-construction-sign"></i> </div>
-                            <h5><a href="services-page.html">General Contracting</a></h5>
-                            <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt risus nesuen.</p> <a href="services-page.html" class="link-btn" tabindex="0">View service</a>
+                        <div class="item mb-30">
+                            <div class="service-img">
+                                <div class="img"> <img src="{{ asset('template/img/services/3.jpg')}}" alt="Industrial Manufacturing"> </div>
+                            </div>
+                            <div class="cont">
+                                <div>
+                                    <div class="service-icon"> <i class="norc-factory"></i> </div>
+                                    <h5 class="service-title"><a href="{{ route('contact') }}">Industrial / Manufacturing</a></h5>
+                                    <p class="service-desc">Custom machine components, industrial vessels, heavy tanks, and sheet metal works.</p>
+                                </div>
+                                <div class="service-action-bar">
+                                    <a href="{{ route('contact') }}?service={{ urlencode('Industrial Manufacturing') }}" class="link-btn" tabindex="0">Inquire Now</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item mb-30">
-                        <div class="service-img">
-                            <div class="img"> <img src="{{ asset('template/img/services/3.jpg')}}" alt=""> </div>
-                        </div>
-                        <div class="cont">
-                            <div class="service-icon"> <i class="norc-factory"></i> </div>
-                            <h5><a href="services-page.html">Industrial / Manufacturing</a></h5>
-                            <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt risus nesuen.</p> <a href="services-page.html" class="link-btn" tabindex="0">View service</a>
-                        </div>
-                    </div>
-                    <div class="item mb-30">
-                        <div class="service-img">
-                            <div class="img"> <img src="{{ asset('template/img/services/4.jpg')}}" alt=""> </div>
-                        </div>
-                        <div class="cont">
-                            <div class="service-icon"> <i class="norc-radiation"></i> </div>
-                            <h5><a href="services-page.html">Energy and Environment</a></h5>
-                            <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt risus nesuen.</p> <a href="services-page.html" class="link-btn" tabindex="0">View service</a>
-                        </div>
-                    </div>
-                    <div class="item mb-30">
-                        <div class="service-img">
-                            <div class="img"> <img src="{{ asset('template/img/services/5.jpg')}}" alt=""> </div>
-                        </div>
-                        <div class="cont">
-                            <div class="service-icon"> <i class="norc-cogwheel"></i> </div>
-                            <h5><a href="services-page.html">Const. Management</a></h5>
-                            <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt risus nesuen.</p> <a href="services-page.html" class="link-btn" tabindex="0">View service</a>
-                        </div>
-                    </div>
-                    <div class="item mb-30">
-                        <div class="service-img">
-                            <div class="img"> <img src="{{ asset('template/img/services/6.jpg')}}" alt=""> </div>
-                        </div>
-                        <div class="cont">
-                            <div class="service-icon"> <i class="norc-pantone"></i> </div>
-                            <h5><a href="services-page.html">Interior Design</a></h5>
-                            <p>Quisque imperdie miss sapien porttiton the bibendum. Pellentesque accumsa amet tincidunt risus nesuen.</p> <a href="services-page.html" class="link-btn" tabindex="0">View service</a>
-                        </div>
-                    </div>
+                    @endforelse
                 </div>
             </div>
         </div>
@@ -207,62 +347,7 @@
             </div>
         </div>
     </section>
-    <!-- Projects -->
-    <section class="projects section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle">Latest Works</div>
-                    <div class="section-title">Our <span>Projects</span></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mb-90">
-                    <div class="projects left">
-                        <figure><img src="{{ asset('template/img/projects/5.jpg')}}" alt="" class="img-fluid"></figure>
-                        <div class="caption">
-                            <h4>Interior Remodeling <span>in Westport, CT</span></h4>
-                            <p>Construction elibero tristique mattis suspen dissen potenti seden laorien ultricies magna, in dignissim justo porta eget miss vention ormana the miss drana on the tenis vitae mollie.</p>
-                            <div class="line-dec"></div>
-                            <div class="info-wrapper">
-                                <div class="date"><i class="norc-new-construction"></i> Renovation</div>
-                                <div class="more"><a href="project-page.html" class="link-btn" tabindex="0">Discover</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 mb-90">
-                    <div class="projects">
-                        <figure><img src="{{ asset('template/img/projects/1.jpg')}}" alt="" class="img-fluid"></figure>
-                        <div class="caption">
-                            <h4>Factory Construction <span>in Southlake, TX</span></h4>
-                            <p>Construction elibero tristique mattis suspen dissen potenti seden laorien ultricies magna, in dignissim justo porta eget miss vention ormana the miss drana on the tenis vitae mollie.</p>
-                            <div class="line-dec"></div>
-                            <div class="info-wrapper">
-                                <div class="date"><i class="norc-factory"></i> Construction</div>
-                                <div class="more"><a href="project-page.html" class="link-btn" tabindex="0">Discover</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="projects left">
-                        <figure><img src="{{ asset('template/img/projects/6.jpg')}}" alt="" class="img-fluid"></figure>
-                        <div class="caption">
-                            <h4>Residential Construction <span>in Los Altos, CA</span></h4>
-                            <p>Construction elibero tristique mattis suspen dissen potenti seden laorien ultricies magna, in dignissim justo porta eget miss vention ormana the miss drana on the tenis vitae mollie.</p>
-                            <div class="line-dec"></div>
-                            <div class="info-wrapper">
-                                <div class="date"><i class="norc-construction-sign"></i> Building</div>
-                                <div class="more"><a href="project-page.html" class="link-btn" tabindex="0">Discover</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
+
     <!-- Values -->
     <section class="values section-padding bg-gray">
         <div class="container">
@@ -480,7 +565,49 @@
             </div>
         </div>
     </section>
-    <!-- Clients -->
-    <section class="clients">
+    </section>
+
+    <!-- Service Detail Modals -->
+    @if(isset($services) && $services->isNotEmpty())
+        @foreach ($services as $index => $service)
+            @php
+                $modalFallback = asset('template/img/services/' . (($index % 6) + 1) . '.jpg');
+                $modalImg = $service->image ? asset('storage/' . $service->image) : $modalFallback;
+            @endphp
+            <div class="modal fade" id="serviceModal{{ $service->id }}" tabindex="-1" aria-labelledby="serviceModalLabel{{ $service->id }}" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+                        <div class="modal-header" style="background: #111; color: #fff; border-bottom: 2px solid #008acf; padding: 20px 25px;">
+                            <h5 class="modal-title" id="serviceModalLabel{{ $service->id }}" style="color: #fff; font-size: 20px; font-weight: 600; margin: 0;">
+                                {{ $service->title }}
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="padding: 25px;">
+                            <div style="aspect-ratio: 1100 / 755; width: 100%; max-height: 380px; overflow: hidden; border-radius: 8px; margin-bottom: 20px; background: #e5e7eb;">
+                                <img src="{{ $modalImg }}" alt="{{ $service->title }}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='{{ $modalFallback }}'">
+                            </div>
+                            @if($service->sort_description)
+                                <div class="p-3 mb-3" style="background: #f8fafc; border-left: 4px solid #008acf; border-radius: 4px;">
+                                    <p style="margin: 0; font-size: 15px; color: #1e293b; font-weight: 500; line-height: 1.6;">
+                                        {{ $service->sort_description }}
+                                    </p>
+                                </div>
+                            @endif
+                            <div style="color: #475569; font-size: 15px; line-height: 1.8;">
+                                {!! nl2br(e($service->description)) !!}
+                            </div>
+                        </div>
+                        <div class="modal-footer" style="background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 15px 25px; display: flex; justify-content: space-between;">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" style="font-size: 14px; border-radius: 6px; padding: 8px 18px;">Close</button>
+                            <a href="{{ route('contact') }}?service={{ urlencode($service->title) }}" class="btn text-white" style="background-color: #008acf; border: none; font-size: 14px; font-weight: 600; padding: 8px 22px; border-radius: 6px;">
+                                Inquire About This Service &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    @endif
 
 @endsection

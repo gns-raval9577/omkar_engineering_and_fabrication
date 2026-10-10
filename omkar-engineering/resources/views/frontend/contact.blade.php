@@ -82,7 +82,7 @@
                                         <input name="phone" type="text" placeholder="Your Number *" required>
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <input name="subject" type="text" placeholder="Subject *" required>
+                                        <input name="subject" type="text" placeholder="Subject *" value="{{ request('service') ? 'Inquiry for ' . request('service') : (request('subject') ?? '') }}" required>
                                     </div>
                                     <div class="col-md-12 form-group">
                                         <textarea name="message" id="message" cols="30" rows="4" placeholder="Message *" required></textarea>

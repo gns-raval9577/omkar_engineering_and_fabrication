@@ -24,26 +24,36 @@ class servicesTable
     {
         return $table
             ->columns([
+                ImageColumn::make('image')
+                    ->disk('public')
+                    ->label('Image Preview')
+                    ->width(75)
+                    ->height(52)
+                    ->extraImgAttributes(['class' => 'rounded object-cover shadow-sm']),
                 TextColumn::make('title')
+                    ->label('Service Title')
                     ->searchable()
                     ->sortable()
                     ->weight(FontWeight::Medium),
                 TextColumn::make('slug')
+                    ->label('Slug')
                     ->searchable()
-                    ->sortable(),
-                TextColumn::make('description')
-                    ->limit(50)
-                    ->wrap()
-                    ->searchable(),
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('sort_description')
-                    ->limit(50)
+                    ->label('Short Summary')
+                    ->limit(65)
                     ->wrap()
                     ->searchable(),
-                ImageColumn::make('image')
-                    ->circular()
-                    ->size(48),
+                TextColumn::make('sort_order')
+                    ->label('Order')
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
+                ToggleColumn::make('is_active')
+                    ->label('Published')
+                    ->sortable(),
                 TextColumn::make('updated_at')
-                    ->label('Last modified at')
+                    ->label('Last Modified')
                     ->date()
                     ->sortable(),
             ])

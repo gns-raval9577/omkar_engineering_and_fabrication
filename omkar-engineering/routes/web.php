@@ -8,8 +8,13 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('frontend.home');
+    $services = \App\Models\Services::where('is_active', true)->orderBy('sort_order')->latest()->get();
+    return view('frontend.home', compact('services'));
 })->name('home');
+
+Route::get('/services', function () {
+    return redirect(route('home') . '#services');
+})->name('services');
 
 
 // front-end route----

@@ -21,5 +21,5 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('template/css/plugins.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('template/css/style.css') }}?v={{ filemtime(public_path('template/css/style.css')) }}">
 </head>

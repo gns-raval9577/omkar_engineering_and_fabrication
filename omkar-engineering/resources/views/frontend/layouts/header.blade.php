@@ -60,14 +60,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('product') }}">Product</a></li>
-                    {{-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Services <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="services.html" class="dropdown-item"><span>Services 01</span></a></li>
-                            <li><a href="services2.html" class="dropdown-item"><span>Services 02</span></a></li>
-                            <li><a href="services3.html" class="dropdown-item"><span>Services 03</span></a></li>
-                            <li><a href="services-page.html" class="dropdown-item"><span>Services Page</span></a></li>
-                        </ul>
-                    </li> --}}
+                    <li class="nav-item"><a class="nav-link" href="{{ route('home') }}#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('project') }}">Project</a></li>
                     {{-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Projects <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">

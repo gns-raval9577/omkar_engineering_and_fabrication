@@ -6,13 +6,13 @@
 
     <!-- Header Banner -->
     <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-    <section class="banner-header banner-img-top section-padding valign bg-img bg-fixed" data-overlay-dark="4"
-        data-background="{{ asset('template/img/slider/1.jpg') }}">
+    <section class="banner-header banner-img-top section-padding valign bg-img bg-fixed" data-overlay-dark="5"
+        data-background="{{ asset('template/img/about-banner-engineering.jpg') }}">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-7">
                     <h6>Engineering & Fabrication Company</h6>
-                    <h1>About <span>Omkar</span></h1>
+                    <h1>About <span>Omkar Engineering</span></h1>
                 </div>
             </div>
         </div>
@@ -22,29 +22,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-30">
-                    <h5>Leading Experts in Engineering & Fabrication Solutions!</h5>
-                    <p>Omkar Engineering & Fabrication is a trusted name in delivering high-quality industrial fabrication,
-                        structural engineering, and custom metal solutions. We specialize in precision work, durability, and
-                        innovative engineering tailored to client requirements.</p>
-                    <p>With years of hands-on experience, we provide end-to-end fabrication services including design,
-                        manufacturing, installation, and maintenance for various industrial and commercial projects.</p>
+                    <h5>Over 25 Years of Engineering Excellence & Heavy Metal Fabrication</h5>
+                    <p>Established in Vatva GIDC, Ahmedabad, <strong>Omkar Engineering & Fabrication</strong> is a premier manufacturer and industrial contractor specializing in structural steel fabrication, pre-engineered building (PEB) sheds, heavy equipment assemblies, industrial storage tanks, piping networks, and precision CNC cutting.</p>
+                    <p>With more than 25 years of hands-on technical expertise, modern workshop infrastructure, and certified fabricators, we deliver complete engineering solutions—from CAD design and structural load calculation to manufacturing, sandblasting, protective painting, and on-site erection.</p>
                     <ul class="listext list-unstyled mb-30">
                         <li>
                             <div class="listext-icon"> <i class="norc-d-check"></i> </div>
                             <div class="listext-text">
-                                <p>10+ years of experience in engineering & fabrication</p>
+                                <p>Over 25 years of proven fabrication craftsmanship & engineering expertise</p>
                             </div>
                         </li>
                         <li>
                             <div class="listext-icon"> <i class="norc-d-check"></i> </div>
                             <div class="listext-text">
-                                <p>200+ successfully completed industrial projects</p>
+                                <p>150+ successfully delivered industrial & heavy structural projects</p>
                             </div>
                         </li>
                         <li>
                             <div class="listext-icon"> <i class="norc-d-check"></i> </div>
                             <div class="listext-text">
-                                <p>High-quality workmanship & client satisfaction</p>
+                                <p>ASME/AWS compliant welding standards & rigorous quality inspection</p>
                             </div>
                         </li>
                     </ul>
@@ -52,17 +49,16 @@
                     <div class="about-bottom"> <img src="{{ asset('template/img/signature-dark.svg') }}" alt=""
                             class="image about-signature">
                         <div class="about-name-wrapper">
-                            <div class="about-name">Omkar Engineering</div>
-                            <div class="about-rol">Fabrication Experts</div>
+                            <div class="about-name">Sagar Rathod (D.M.E.)</div>
+                            <div class="about-rol">Founder & Managing Director</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="about-img fl-wrap">
-                        <img src="{{ asset('template/img/about4.jpg') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('template/img/about-main-fabrication.jpg') }}" class="img-fluid" alt="Omkar Engineering Fabrication Inspection">
                         <div class="about-img-hotifer color-bg">
-                            <p>Our years of fabrication experience ensure strong, reliable, and precise engineering
-                                solutions.</p>
+                            <p>Our 25+ years of fabrication experience ensure strong, reliable, and precise engineering solutions.</p>
                         </div>
                     </div>
                 </div>
@@ -76,22 +72,18 @@
                 <div class="row">
                     <div class="col-md-5">
                         <div class="about-info-img mb-60">
-                            <div class="img"> <img src="{{ asset('template/img/about2.jpg') }}" class="img-fluid"
-                                    alt=""> </div>
+                            <div class="img"> <img src="{{ asset('template/img/about-journey-blueprints.jpg') }}" class="img-fluid"
+                                    alt="Omkar Engineering Fabrication Blueprints & CAD"> </div>
                         </div>
-                        <div class="section-title2">The journey of<span>Omkar Engineering & Fabrication</span></div>
-                        <p>Founded with a vision to deliver high-quality engineering solutions, Omkar Engineering &
-                            Fabrication has grown into a reliable partner for industrial fabrication, structural work, and
-                            customized metal projects.</p>
+                        <div class="section-title2">The Journey of <span>Omkar Engineering & Fabrication</span></div>
+                        <p>Founded with a commitment to unmatched structural reliability, Omkar Engineering & Fabrication has evolved into a trusted engineering partner for heavy manufacturing industries across Gujarat and India. We translate complex structural specifications and CAD blueprints into enduring, high-strength industrial structures.</p>
                     </div>
                     <div class="col-md-6 offset-md-1 pt-60">
-                        <div class="section-title2">Excellence in <span>Engineering & Fabrication Services</span></div>
-                        <p>We focus on precision engineering, advanced fabrication techniques, and timely project delivery
-                            to meet the highest industry standards and customer expectations.
-                        </p>
+                        <div class="section-title2">Advanced Machinery & <span>Precision Fabrication</span></div>
+                        <p>We deploy modern fabrication machinery—including high-accuracy CNC fiber laser cutting, heavy hydraulic plate bending, precision lathe turning, and automated welding—guaranteeing superior structural strength, tight dimensional tolerances, and prompt project delivery.</p>
                         <div class="about-info-img pt-60">
-                            <div class="img"> <img src="{{ asset('template/img/about3.jpg') }}" class="img-fluid"
-                                    alt=""> </div>
+                            <div class="img"> <img src="{{ asset('template/img/about-excellence-fabrication.jpg') }}" class="img-fluid"
+                                    alt="Precision CNC Laser Cutting & Heavy Fabrication"> </div>
                         </div>
                     </div>
                 </div>
@@ -103,74 +95,66 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-subtitle">Skilled Professionals</div>
-                    <div class="section-title">Meet <span>Our Experts</span></div>
+                    <div class="section-subtitle">Skilled Engineering Professionals</div>
+                    <div class="section-title">Meet <span>Our Leadership</span></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="team-card mb-30">
-                        <div class="team-img"><img src="{{ asset('template/img/team/1.jpg') }}" alt=""
+                        <div class="team-img"><img src="{{ asset('template/img/team/team-sagar-rathod.jpg') }}" alt="Sagar Rathod - Founder & Managing Director"
                                 class="w-100"></div>
                         <div class="team-content">
-                            <h3 class="team-title">Adam Norman<span>CEO & Founder</span></h3>
-                            <p class="team-text">Nulla quis efficitur lacus sulvinar suere ausue in eduis euro vesatien
-                                arcuman ontese auctor ac aleuam aretra.</p>
+                            <h3 class="team-title">Sagar Rathod (D.M.E.)<span>Founder & Managing Director</span></h3>
+                            <p class="team-text">Over 25 years of technical leadership in heavy industrial fabrication, structural PEB sheds, process equipment, and turnkey manufacturing execution.</p>
                             <div class="social">
                                 <div class="full-width">
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="tel:+918141133144"><i class="fa fa-phone"></i></a>
+                                    <a href="mailto:omkarengineers.fab@gmail.com"><i class="fa fa-envelope"></i></a>
+                                    <a href="https://wa.me/918141133144" target="_blank"><i class="fa fa-whatsapp"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="title-box">
-                            <h3 class="mb-0">Adam Norman<span>CEO & Founder</span></h3>
+                            <h3 class="mb-0">Sagar Rathod (D.M.E.)<span>Founder & Managing Director</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-30">
-                        <div class="team-img"><img src="{{ asset('template/img/team/2.jpg') }}" alt=""
+                        <div class="team-img"><img src="{{ asset('template/img/team/team-lead-engineer.jpg') }}" alt="R. Sharma - Senior Structural Design Engineer"
                                 class="w-100"></div>
                         <div class="team-content">
-                            <h3 class="team-title">Enrico Brown<span>Head of Sales</span></h3>
-                            <p class="team-text">Nulla quis efficitur lacus sulvinar suere ausue in eduis euro vesatien
-                                arcuman ontese auctor ac aleuam aretra.</p>
+                            <h3 class="team-title">R. Sharma<span>Senior Structural Design Engineer</span></h3>
+                            <p class="team-text">Specializes in CAD/CAM modeling, load-bearing structural design, pre-engineered building calculations, and material optimization.</p>
                             <div class="social">
                                 <div class="full-width">
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="mailto:omkarengineers.fab@gmail.com"><i class="fa fa-envelope"></i></a>
+                                    <a href="tel:+918141133144"><i class="fa fa-phone"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="title-box">
-                            <h3 class="mb-0">Enrico Brown<span>Head of Sales</span></h3>
+                            <h3 class="mb-0">R. Sharma<span>Senior Structural Engineer</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-30">
-                        <div class="team-img"><img src="{{ asset('template/img/team/3.jpg') }}" alt=""
+                        <div class="team-img"><img src="{{ asset('template/img/team/team-fabrication-manager.jpg') }}" alt="Rajesh Solanki - Fabrication & Quality Supervisor"
                                 class="w-100"></div>
                         <div class="team-content">
-                            <h3 class="team-title">Olivia White<span>Lead Project Manager</span></h3>
-                            <p class="team-text">Nulla quis efficitur lacus sulvinar suere ausue in eduis euro vesatien
-                                arcuman ontese auctor ac aleuam aretra.</p>
+                            <h3 class="team-title">Rajesh Solanki<span>Fabrication & Quality Supervisor</span></h3>
+                            <p class="team-text">Directs shop-floor welding operations, ultrasonic weld testing, surface finishing, and strict compliance with industrial safety protocols.</p>
                             <div class="social">
                                 <div class="full-width">
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="mailto:omkarengineers.fab@gmail.com"><i class="fa fa-envelope"></i></a>
+                                    <a href="tel:+918141133144"><i class="fa fa-phone"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="title-box">
-                            <h3 class="mb-0">Olivia White<span>Lead Project Manager</span></h3>
+                            <h3 class="mb-0">Rajesh Solanki<span>Fabrication & Quality Supervisor</span></h3>
                         </div>
                     </div>
                 </div>
