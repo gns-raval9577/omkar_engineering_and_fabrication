@@ -103,7 +103,7 @@
                             <li><a href="post.html" class="dropdown-item"><span>Post Page</span></a></li>
                         </ul>
                     </li> --}}
-                    <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
                     <li class="nav-item dropdown"> <a class="nav-link" href="#" role="button"
                             data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Downloads <i
                                 class="fa fa-angle-down"></i></a>

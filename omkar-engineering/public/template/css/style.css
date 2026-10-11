@@ -3249,63 +3249,75 @@ button.mfp-arrow {
 
 /* ======= Accordion Box (for Faqs) style ======= */
 .faqs-accordion .accordion .item {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+.faqs-accordion .accordion .item:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
 }
 .faqs-accordion .accordion .title {
-    padding: 30px 30px 30px 80px;
+    padding: 20px 24px;
     cursor: pointer;
     position: relative;
     border: none;
-    border: 1px solid #fff;
     margin-bottom: 0px;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.25s ease;
 }
-.faqs-accordion .accordion .title:after {
-    content: '\e61a';
-    font-family: 'themify';
-    font-weight: normal;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: #008acf;
-    padding: 9px 14px;
-    color: #fff;
+.faqs-accordion .accordion .title:after,
+.faqs-accordion .accordion .title:before,
+.faqs-accordion .accordion .active .title:after,
+.faqs-accordion .accordion .active .title:before {
+    display: none !important;
+    content: none !important;
 }
 .faqs-accordion .accordion .title h6 {
     font-size: 16px;
+    font-weight: 600;
     margin-bottom: 0;
-    color: #000;
+    color: #0f172a;
+    font-family: 'Syne', sans-serif;
+    line-height: 1.5;
 }
 .faqs-accordion .accordion .accordion-info {
     display: none;
-    padding: 20px;
+    padding: 0 24px 22px 24px;
     margin-top: 0px;
     margin-left: 0px;
     background: #fff;
 }
-.faqs-accordion .accordion .active {
-    display: block;
+.faqs-accordion .accordion .accordion-info p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0;
+    border-top: 1px dashed #e2e8f0;
+    padding-top: 16px;
 }
-.faqs-accordion .accordion .active .title {
-    color: #fff;
-    background: #008acf;
-    border: 1px solid #008acf;
-    -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+.faqs-accordion .accordion .item.active {
+    border-color: #008acf;
+    border-left: 4px solid #008acf;
+    box-shadow: 0 8px 24px rgba(0, 138, 207, 0.1);
 }
-.faqs-accordion .accordion .active .title:after {
-    content: '\e622';
-    background: #fff;
-    color: #000;
+.faqs-accordion .accordion .item.active .title {
+    background: #f8fafc;
 }
-.faqs-accordion .accordion .active .title h6 {
-    color: #fff;
+.faqs-accordion .accordion .item.active .title h6 {
+    color: #008acf;
 }
 .faqs-accordion .accordion .accordion-info ul {
     list-style-type: disc;
 }
+
 
 
 /* ======= Clients style ======= */

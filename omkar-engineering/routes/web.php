@@ -56,7 +56,8 @@ Route::get('/project-details', function () {
 })->name('project-details');
 
 Route::get('/contact', function () {
-    return view('frontend.contact');
+    $services = \App\Models\Services::where('is_active', true)->orderBy('sort_order')->get();
+    return view('frontend.contact', compact('services'));
 })->name('contact');
 
 Route::get('/certificates', function () {
