@@ -1,16 +1,17 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'project')
+@section('title', 'Our Projects | Omkar Engineering & Fabrication')
 
 @section('content')
 
     <!-- Header Banner -->
-    <section class="banner-header banner-img-top section-padding valign bg-img bg-fixed" data-overlay-dark="4"
-        data-background="{{ asset('template/img/slider/1.jpg') }}"">
+    <section class="banner-header banner-img-top section-padding valign bg-img bg-fixed" data-overlay-dark="5"
+        data-background="{{ asset('template/img/projects-banner-engineering.jpg') }}"
+        style="background-image: url('{{ asset('template/img/projects-banner-engineering.jpg') }}');">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
-                    <h6>Latest Works</h6>
+                <div class="col-md-7">
+                    <h6>Fabrication & Engineering Portfolio</h6>
                     <h1>Our <span>Projects</span></h1>
                 </div>
             </div>
@@ -20,78 +21,39 @@
     <section class="projects section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 mb-90">
-                    <div class="projects left">
-                        <figure><img src="{{ asset('template/img/projects/5.jpg') }}"" alt="" class="img-fluid">
-                        </figure>
-                        <div class="caption">
-                            <h4>Interior Remodeling <span>in Westport, CT</span></h4>
-                            <p>Construction elibero tristique mattis suspen dissen potenti seden laorien ultricies magna, in
-                                dignissim justo porta eget miss vention ormana the miss drana on the tenis vitae mollie.</p>
-                            <div class="line-dec"></div>
-                            <div class="info-wrapper">
-                                <div class="date"><i class="norc-new-construction"></i> Renovation</div>
-                                <div class="more"><a href="{{ route('project-details') }}" class="link-btn"
-                                        tabindex="0">Discover</a>
+                @forelse($projects as $project)
+                    <div class="col-md-12 {{ !$loop->last ? 'mb-90' : '' }}">
+                        <div class="projects {{ $loop->iteration % 2 != 0 ? 'left' : '' }}">
+                            <figure>
+                                <img src="{{ $project->image_url }}" alt="{{ $project->title }}" class="img-fluid" style="aspect-ratio: 16/10; object-fit: cover; width: 100%;">
+                            </figure>
+                            <div class="caption">
+                                <h4>
+                                    <a href="{{ route('project-details', $project->slug) }}" style="color: inherit; text-decoration: none;">
+                                        {{ $project->title }}
+                                    </a>
+                                    @if($project->location)
+                                        <span>in {{ $project->location }}</span>
+                                    @endif
+                                </h4>
+                                <p>{{ $project->sort_description }}</p>
+                                <div class="line-dec"></div>
+                                <div class="info-wrapper">
+                                    <div class="date">
+                                        <i class="{{ $project->icon ?: 'norc-factory' }}"></i> {{ $project->category ?? 'Fabrication' }}
+                                    </div>
+                                    <div class="more">
+                                        <a href="{{ route('project-details', $project->slug) }}" class="link-btn" tabindex="0">Discover</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12 mb-90">
-                    <div class="projects">
-                        <figure><img src="{{ asset('template/img/projects/1.jpg') }}"" alt="" class="img-fluid">
-                        </figure>
-                        <div class="caption">
-                            <h4>Factory Construction <span>in Southlake, TX</span></h4>
-                            <p>Construction elibero tristique mattis suspen dissen potenti seden laorien ultricies magna, in
-                                dignissim justo porta eget miss vention ormana the miss drana on the tenis vitae mollie.</p>
-                            <div class="line-dec"></div>
-                            <div class="info-wrapper">
-                                <div class="date"><i class="norc-factory"></i> Construction</div>
-                                <div class="more"><a href="{{ route('project-details') }}" class="link-btn"
-                                        tabindex="0">Discover</a>
-                                </div>
-                            </div>
-                        </div>
+                @empty
+                    <div class="col-12 text-center py-5">
+                        <p style="color: #64748b; font-size: 16px;">No projects currently available.</p>
                     </div>
-                </div>
-                <div class="col-md-12 mb-90">
-                    <div class="projects left">
-                        <figure><img src="{{ asset('template/img/projects/6.jpg') }}"" alt="" class="img-fluid">
-                        </figure>
-                        <div class="caption">
-                            <h4>Residential Construction <span>in Los Altos, CA</span></h4>
-                            <p>Construction elibero tristique mattis suspen dissen potenti seden laorien ultricies magna, in
-                                dignissim justo porta eget miss vention ormana the miss drana on the tenis vitae mollie.</p>
-                            <div class="line-dec"></div>
-                            <div class="info-wrapper">
-                                <div class="date"><i class="norc-construction-sign"></i> Building</div>
-                                <div class="more"><a href="{{ route('project-details') }}" class="link-btn"
-                                        tabindex="0">Discover</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="projects">
-                        <figure><img src="{{ asset('template/img/projects/3.jpg') }}"" alt="" class="img-fluid">
-                        </figure>
-                        <div class="caption">
-                            <h4>Solar Energy Construction, McLean, VA</h4>
-                            <p>Construction elibero tristique mattis suspen dissen potenti seden laorien ultricies magna, in
-                                dignissim justo porta eget miss vention ormana the miss drana on the tenis vitae mollie.</p>
-                            <div class="line-dec"></div>
-                            <div class="info-wrapper">
-                                <div class="date"><i class="norc-radiation"></i> Solar Energy</div>
-                                <div class="more"><a href="{{ route('project-details') }}" class="link-btn"
-                                        tabindex="0">Discover</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforelse
             </div>
         </div>
     </section>

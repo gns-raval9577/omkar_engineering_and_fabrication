@@ -61,7 +61,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('product') }}">Product</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('home') }}#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('project') }}">Project</a></li>
+                    <li class="nav-item"><a class="nav-link {{ request()->routeIs('project*') ? 'active' : '' }}" href="{{ route('project') }}">Project</a></li>
                     {{-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Projects <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="projects.html" class="dropdown-item"><span>Projects 01</span></a></li>

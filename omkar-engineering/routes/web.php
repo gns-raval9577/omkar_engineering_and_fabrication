@@ -48,12 +48,42 @@ Route::get('/product/{slug}', function ($slug) {
 });
 
 Route::get('/project', function () {
-    return view('frontend.project');
+    $projects = \App\Models\Project::where('is_active', true)->orderBy('sort_order')->latest()->get();
+    return view('frontend.project', compact('projects'));
 })->name('project');
 
-Route::get('/project-details', function () {
-    return view('frontend.projectdetails');
+Route::get('/project-details/{slug?}', function ($slug = null) {
+    if (!$slug) {
+        $first = \App\Models\Project::where('is_active', true)->orderBy('sort_order')->first();
+        if ($first) {
+            return redirect()->route('project-details', ['slug' => $first->slug ?: $first->id]);
+        }
+        return redirect()->route('project');
+    }
+
+    $project = \App\Models\Project::where('is_active', true)
+        ->where(function ($q) use ($slug) {
+            $q->where('slug', $slug)->orWhere('id', $slug);
+        })
+        ->firstOrFail();
+
+    $prevProject = \App\Models\Project::where('is_active', true)
+        ->where('id', '<', $project->id)
+        ->orderBy('id', 'desc')
+        ->first();
+
+    $nextProject = \App\Models\Project::where('is_active', true)
+        ->where('id', '>', $project->id)
+        ->orderBy('id', 'asc')
+        ->first();
+
+    return view('frontend.projectdetails', compact('project', 'prevProject', 'nextProject'));
 })->name('project-details');
+
+Route::get('/project/{slug}', function ($slug) {
+    return redirect()->route('project-details', ['slug' => $slug]);
+});
+
 
 Route::get('/contact', function () {
     $services = \App\Models\Services::where('is_active', true)->orderBy('sort_order')->get();
