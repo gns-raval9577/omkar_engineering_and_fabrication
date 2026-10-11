@@ -104,13 +104,16 @@
                             <div class="section-subtitle mb-5">Quick Inquiry</div>
                             <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 20px; font-family: 'Syne', sans-serif;">Request A Project <span>Quotation</span></h4>
                             
-                            <form method="post" id="contactInquiryForm" class="contact__form">
+                            <form method="post" action="{{ route('contact.inquiry.store') }}" id="contactInquiryForm" class="contact__form">
                                 @csrf
                                 <!-- Form message -->
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="alert alert-success contact__msg" id="contactSuccessMsg" style="display: none; border-radius: 8px; font-size: 14px;" role="alert">
-                                            <i class="fa fa-check-circle mr-1"></i> Thank you! Your inquiry has been sent successfully. Our engineering team will review your specifications and contact you shortly.
+                                        <div class="alert alert-success contact__msg" id="contactSuccessMsg" style="display: none; border-radius: 8px; font-size: 14px; background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0;" role="alert">
+                                            <i class="fa fa-check-circle mr-1"></i> <span id="contactSuccessText">Thank you! Your quotation inquiry has been submitted and saved. Our engineering team will review your specifications and contact you shortly.</span>
+                                        </div>
+                                        <div class="alert alert-danger contact__msg" id="contactErrorMsg" style="display: none; border-radius: 8px; font-size: 14px; background: #fef2f2; color: #991b1b; border: 1px solid #fecaca;" role="alert">
+                                            <i class="fa fa-exclamation-circle mr-1"></i> <span id="contactErrorText"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +160,7 @@
                                     </div>
 
                                     <div class="col-md-12">
-                                        <button type="submit" class="button-secondary w-100" style="border: none; cursor: pointer; padding: 14px 28px; font-size: 15px; font-weight: 600; border-radius: 80px;">
+                                        <button type="submit" id="btnSubmitInquiry" class="button-secondary w-100" style="border: none; cursor: pointer; padding: 14px 28px; font-size: 15px; font-weight: 600; border-radius: 80px;">
                                             <span>Send Inquiry &rarr;</span>
                                         </button>
                                     </div>
@@ -503,16 +506,68 @@
                 inquiryForm.addEventListener('submit', function (e) {
                     e.preventDefault();
                     updateWhatsAppLink();
-                    
-                    if (successMsg) {
-                        successMsg.style.display = 'block';
-                        successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+                    const submitBtn = document.getElementById('btnSubmitInquiry');
+                    const errorMsg = document.getElementById('contactErrorMsg');
+                    const errorText = document.getElementById('contactErrorText');
+                    const successText = document.getElementById('contactSuccessText');
+
+                    if (errorMsg) errorMsg.style.display = 'none';
+                    if (successMsg) successMsg.style.display = 'none';
+
+                    const originalBtnContent = submitBtn ? submitBtn.innerHTML : '';
+                    if (submitBtn) {
+                        submitBtn.disabled = true;
+                        submitBtn.innerHTML = '<span><i class="fa fa-spinner fa-spin mr-2"></i> Submitting Inquiry...</span>';
                     }
 
-                    // Reset form after a small delay
-                    setTimeout(function () {
-                        inquiryForm.reset();
-                    }, 4000);
+                    const formData = new FormData(inquiryForm);
+
+                    fetch(inquiryForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'X-Requested-With': 'XMLHttpRequest',
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(async function (response) {
+                        const data = await response.json();
+                        if (response.ok && data.success) {
+                            if (successMsg) {
+                                if (successText && data.message) {
+                                    successText.innerText = data.message;
+                                }
+                                successMsg.style.display = 'block';
+                                successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                            }
+                            inquiryForm.reset();
+                        } else {
+                            let errMessage = data.message || 'Something went wrong. Please check your inputs and try again.';
+                            if (data.errors) {
+                                const errorList = Object.values(data.errors).flat();
+                                errMessage = errorList.join(' ');
+                            }
+                            if (errorMsg && errorText) {
+                                errorText.innerText = errMessage;
+                                errorMsg.style.display = 'block';
+                                errorMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                            }
+                        }
+                    })
+                    .catch(function (error) {
+                        console.error('Error submitting form:', error);
+                        if (errorMsg && errorText) {
+                            errorText.innerText = 'Unable to send inquiry right now. Please connect with us directly via phone or WhatsApp.';
+                            errorMsg.style.display = 'block';
+                        }
+                    })
+                    .finally(function () {
+                        if (submitBtn) {
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalBtnContent;
+                        }
+                    });
                 });
             }
 

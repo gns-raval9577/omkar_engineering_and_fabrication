@@ -60,6 +60,9 @@ Route::get('/contact', function () {
     return view('frontend.contact', compact('services'));
 })->name('contact');
 
+Route::post('/contact/inquiry', [\App\Http\Controllers\InquiryController::class, 'store'])->name('contact.inquiry.store');
+
+
 Route::get('/certificates', function () {
     return view('frontend.certificates');
 })->name('certificates');
